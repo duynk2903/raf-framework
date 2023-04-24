@@ -1,4 +1,4 @@
-import { headerMenuActions, menusConfig } from '@core/configs/menu.config'
+import { headerMenuActions } from '@core/configs/menu.config'
 import { useTranslation } from 'react-i18next'
 import { TranslateEnum } from '@core/enums/translate.enum'
 import { useCallback, useMemo } from 'react'
@@ -44,13 +44,6 @@ const useHeader = () => {
   }, [translate])
 
   /**
-   * List menu header config with translate
-   */
-  const listMenuConfigs = useMemo(() => {
-    return menusConfig(translate)
-  }, [translate])
-
-  /**
    * Handle collapse the sidebar
    */
   const handleCollapse = useCallback(() => {
@@ -60,7 +53,6 @@ const useHeader = () => {
     })
   }, [sidebarState])
   return {
-    listMenuConfigs,
     headerMenuActions,
     listHeaderMenuAction,
     sidebarState,

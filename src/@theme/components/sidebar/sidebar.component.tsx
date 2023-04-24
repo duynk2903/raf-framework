@@ -1,23 +1,18 @@
 import { FC } from 'react'
-import { Layout, Menu } from 'antd'
+import { Layout } from 'antd'
 import { useSideBar } from '@theme/components/sidebar/sidebar.hook'
 const { Sider } = Layout
 import './sidebar.style.scss'
 import { SidebarProps } from '@theme/components/sidebar/sidebar.type'
 import { themeVariables } from '@core/configs/theme.config'
+import MenuComponent from '@theme/components/menu/menu.component'
 
 /**
  * Common sidebar component
  * @constructor
  */
 const SidebarComponent: FC<SidebarProps> = () => {
-  const {
-    listMenuSidebar,
-    handleAutoBreakPointResponsive,
-    sidebarState,
-    handleSelectedMenuAndStartNavigate,
-    onOpenChange
-  } = useSideBar()
+  const { handleAutoBreakPointResponsive, sidebarState } = useSideBar()
   return (
     <Sider
       className="ngx-sidebar"
@@ -35,15 +30,7 @@ const SidebarComponent: FC<SidebarProps> = () => {
         left: 0,
         bottom: 0
       }}>
-      <Menu
-        mode="inline"
-        selectedKeys={[sidebarState?.selectedKey]}
-        openKeys={sidebarState?.openKeys}
-        style={{ height: '100%', borderRight: 0 }}
-        onOpenChange={onOpenChange}
-        items={listMenuSidebar}
-        onSelect={handleSelectedMenuAndStartNavigate}
-      />
+      <MenuComponent />
     </Sider>
   )
 }

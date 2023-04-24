@@ -5,13 +5,14 @@ const { Header } = Layout
 import './header.style.scss'
 import NgxIcon from '@core/components/ngx-icon/icon.component'
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons'
+import MenuComponent from '@theme/components/menu/menu.component'
 
 /**
  * Common header application component
  * @constructor
  */
 const HeaderComponent: FC = () => {
-  const { listMenuConfigs, listHeaderMenuAction, sidebarState, handleCollapse, navigateToHome } = useHeader()
+  const { listHeaderMenuAction, sidebarState, handleCollapse, navigateToHome } = useHeader()
   return (
     <Header className="ngx-header-container" style={{ position: 'sticky', top: 0, zIndex: 1, width: '100%' }}>
       <Row>
@@ -35,13 +36,7 @@ const HeaderComponent: FC = () => {
         </Col>
         {!sidebarState?.isEnabled && (
           <Col span={16}>
-            <Menu
-              className="ngx-header-menu"
-              theme="dark"
-              mode="horizontal"
-              defaultSelectedKeys={['dashboard']}
-              items={listMenuConfigs}
-            />
+            <MenuComponent className="ngx-header-menu" theme="dark" mode="horizontal" />
           </Col>
         )}
 

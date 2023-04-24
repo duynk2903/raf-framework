@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/react-ant-framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/react-ant-framework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: fix default open sidebar when navigate change">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-app/app.recoil.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-app/app.recoil.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-app/app.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-app/app.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@core/configs/menu.config.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/menu.config.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/configs/sidebar.config.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/sidebar.config.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/configs/sidebar.config.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/components/header/header.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/header/header.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/components/header/header.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/header/header.hook.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.hook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/layouts/auth/auth.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/auth/auth.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/layouts/auth/auth.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/auth/auth.style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,25 +31,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/duynk9/Desktop/CMC/react-ant-framework/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/duynk9/Desktop/CMC/react-ant-framework/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/duynk9/Desktop/CMC/react-ant-framework/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/duynk9/Desktop/CMC/react-ant-framework/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -81,12 +77,25 @@
       <updated>1682343092540</updated>
       <workItem from="1682343094346" duration="164000" />
       <workItem from="1682343510306" duration="99000" />
-      <workItem from="1682344362932" duration="869000" />
+      <workItem from="1682344362932" duration="1189000" />
+      <workItem from="1682345561978" duration="2670000" />
     </task>
+    <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
+      <created>1682345332751</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682345332751</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Tommy: fix default open sidebar when navigate change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: fix default open sidebar when navigate change" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
