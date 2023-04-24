@@ -1,4 +1,3 @@
-import { MenuProps } from 'antd'
 import {
   AlertOutlined,
   DashboardOutlined,
@@ -8,16 +7,16 @@ import {
   UnorderedListOutlined,
   WarningOutlined
 } from '@ant-design/icons'
-import { MenuType } from '@core/enums/menu.enum'
 import React from 'react'
 import { TFunction } from 'i18next'
 import _ from 'lodash'
 import { DashboardRouterLink, ErrorRouterLink } from '@core/enums/router.enum'
+import { MenuModel } from '@core/models/menu.model'
 
 /**
  * The left sidebar configuration
  */
-const sidebarConfigs = (translate: TFunction): MenuProps[MenuType.ITEMS] => [
+const sidebarConfigs = (translate: TFunction): MenuModel[] => [
   {
     label: translate('menu.dashboards.title'),
     key: DashboardRouterLink.BASE_PATH,

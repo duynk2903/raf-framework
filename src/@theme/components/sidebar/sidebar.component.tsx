@@ -11,8 +11,13 @@ import { themeVariables } from '@core/configs/theme.config'
  * @constructor
  */
 const SidebarComponent: FC<SidebarProps> = () => {
-  const { listMenuSidebar, handleAutoBreakPointResponsive, sidebarState, handleSelectedMenuAndStartNavigate } =
-    useSideBar()
+  const {
+    listMenuSidebar,
+    handleAutoBreakPointResponsive,
+    sidebarState,
+    handleSelectedMenuAndStartNavigate,
+    onOpenChange
+  } = useSideBar()
   return (
     <Sider
       className="ngx-sidebar"
@@ -32,9 +37,10 @@ const SidebarComponent: FC<SidebarProps> = () => {
       }}>
       <Menu
         mode="inline"
-        defaultSelectedKeys={['dashboard']}
-        defaultOpenKeys={['dashboard']}
+        selectedKeys={[sidebarState?.selectedKey]}
+        openKeys={sidebarState?.openKeys}
         style={{ height: '100%', borderRight: 0 }}
+        onOpenChange={onOpenChange}
         items={listMenuSidebar}
         onSelect={handleSelectedMenuAndStartNavigate}
       />

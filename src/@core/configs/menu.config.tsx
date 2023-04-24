@@ -1,17 +1,17 @@
 import React from 'react'
-import { Avatar, MenuProps } from 'antd'
+import { Avatar } from 'antd'
 import { LogoutOutlined, UserOutlined } from '@ant-design/icons'
-import { MenuType } from '@core/enums/menu.enum'
 import { TFunction } from 'i18next'
 import { TranslateLanguageEnum } from '@core/enums/translate.enum'
 import { changeLanguage, getCurrentLanguage } from '@core/helpers/i18n.helper'
 import { sidebarConfigs } from '@core/configs/sidebar.config'
+import { MenuModel } from '@core/models/menu.model'
 
 /**
  * Menu header application configuration
  * @param translate
  */
-const menusConfig = (translate: TFunction): MenuProps[MenuType.ITEMS] => sidebarConfigs(translate)
+const menusConfig = (translate: TFunction): MenuModel[] => sidebarConfigs(translate)
 
 /**
  * Header menu action configuration with translate function
@@ -19,7 +19,7 @@ const menusConfig = (translate: TFunction): MenuProps[MenuType.ITEMS] => sidebar
  * @param username
  * @param logOut
  */
-const headerMenuActions = (translate: TFunction, username: string, logOut: () => void): MenuProps[MenuType.ITEMS] => [
+const headerMenuActions = (translate: TFunction, username: string, logOut: () => void): MenuModel[] => [
   {
     key: 'user',
     label: username,

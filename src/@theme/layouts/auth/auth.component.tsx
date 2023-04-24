@@ -15,7 +15,7 @@ const AuthLayout: FC = () => {
   return (
     <Layout className="ngx-auth-layout">
       <Layout.Content>
-        <Row className="ngx-auth-container pt-32 h-full m-auto">
+        <Row className="ngx-auth-container pt-48 h-full m-auto">
           <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" className="w-full">
             <Col span={12} offset={6}>
               <Row className="auth-body" gutter={[16, 32]}>
