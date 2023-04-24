@@ -1,0 +1,10 @@
+{
+  "error": {
+    "notFound": {
+      "title": "Page not found",
+      "subtitle": "You’re either misspelling the URL",
+      "subTitle2": "or requesting a page that no longer here.",
+      "backBtn": " Back to previous page"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@import '~aos/dist/aos.css';
+@import '~antd/dist/reset.css';
+@import 'style';
+@import 'override';
+@import 'variable';
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "theme": {
+      "modeTitle": "Setting page styles",
+      "settingThemeTooltip": "Setting",
+      "title": "Theme settings",
+      "colorTitle": "Setting color",
+      "lightModeTitle": "Light Mode",
+      "darkModeTitle": "Dark mode",
+      "globalSpinner": "Global spinner",
+      "navigationMode": "Navigation Mode",
+      "resetSetting": "Reset theme settings"
+    },
+    "color": {
+      "daybreakBlue": "Daybreak blue",
+      "dustRed": "Dust red",
+      "volcano": "Volcano",
+      "sunsetOrange": "Sunset orange",
+      "cyan": "Cyan",
+      "polarGreen": "Polar green",
+      "greekBlue": "Greek blue",
+      "goldenPurple": "Golden purple"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "menu": {
+    "dashboards": {
+      "title": "계기반",
+      "children": {
+        "analytics": "해석학",
+        "monitor": "감시 장치",
+        "workspace": "작업 공간"
+      }
+    },
+    "form": {
+      "title": "형태",
+      "children": {
+        "basic": "기본형",
+        "step": "단계 양식",
+        "advanced": "고급 양식"
+      }
+    },
+    "list": {
+      "title": "목록",
+      "children": {
+        "search": "검색 목록",
+        "step": "검색 테이블",
+        "basic": "기본 목록",
+        "card": "카드 목록"
+      }
+    },
+    "profiles": {
+      "title": "프로필",
+      "children": {
+        "basic": "기본 프로필",
+        "advanced": "고급 프로필"
+      }
+    },
+    "alert": {
+      "title": "알리다",
+      "children": {
+        "warning": "경고 경고",
+        "success": "성공 알림",
+        "confirm": "알림 확인",
+        "error": "오류 경고"
+      }
+    },
+    "exception": {
+      "title": "예외",
+      "children": {
+        "403": "403",
+        "404": "404",
+        "500": "500"
+      }
+    },
+    "icons": {
+      "title": "아이콘",
+      "children": {
+        "default": "Ant designed icons",
+        "custom": "맞춤 아이콘"
+      }
+    },
+    "dashboard": "계기반",
+    "profile": "프로필",
+    "logout": "로그 아웃",
+    "language": {
+      "en": "US English",
+      "ko": "KR Korea"
+    }
+  }
+}

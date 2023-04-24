@@ -1,0 +1,67 @@
+{
+  "menu": {
+    "dashboards": {
+      "title": "Dashboard",
+      "children": {
+        "analytics": "Analytics",
+        "monitor": "Monitor",
+        "workspace": "Workspace"
+      }
+    },
+    "form": {
+      "title": "Form",
+      "children": {
+        "basic": "Basic Form",
+        "step": "Step Form",
+        "advanced": "Advanced Form"
+      }
+    },
+    "list": {
+      "title": "List",
+      "children": {
+        "search": "Search List",
+        "step": "Search Table",
+        "basic": "Basic list",
+        "card": "Card List"
+      }
+    },
+    "profiles": {
+      "title": "Profiles",
+      "children": {
+        "basic": "Basic Profile",
+        "advanced": "Advanced Profile"
+      }
+    },
+    "alert": {
+      "title": "Alert",
+      "children": {
+        "warning": "Warning Alert",
+        "success": "Success Alert",
+        "confirm": "Confirm Alert",
+        "error": "Error Alert"
+      }
+    },
+    "exception": {
+      "title": "Exception",
+      "children": {
+        "403": "403",
+        "404": "404",
+        "500": "500"
+      }
+    },
+    "icons": {
+      "title": "Icons",
+      "children": {
+        "default": "Ant designed icons",
+        "custom": "Custom icons"
+      }
+    },
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "logout": "Logout",
+    "language": {
+      "en": "US English",
+      "ko": "KR Korea"
+    }
+  }
+}

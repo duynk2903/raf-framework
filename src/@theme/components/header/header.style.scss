@@ -1,0 +1,73 @@
+@import "@theme/styles/variable";
+
+.ngx-header-container {
+  height: map-get($theme, headerHeight) !important;
+  padding-right: 0 !important;
+
+  .collapse-btn {
+    position: absolute;
+    left: -0.25rem;
+    width: 4rem !important;
+    height: 4rem;
+    font-size: 1rem;
+    &, &:hover {
+      background: none !important;
+    }
+  }
+
+  .header-logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    .logo {
+      float: left;
+      width: 2rem;
+      height: 2rem;
+      margin-top: -10px;
+    }
+  }
+
+
+  .ant-menu-item-selected, .ant-menu-submenu-selected {
+    background: none !important;
+  }
+
+  .ant-menu-item {
+    font-size: map-get($fontSize, menu) !important;
+
+    svg {
+      font-size: map-get($fontSize, svg) !important;
+    }
+  }
+
+  .ngx-header-menu {
+    height: 100%;
+    align-items: center;
+    padding-left: 2.7625rem;
+
+    .ant-menu-item:not(:first-child) {
+      padding-left: 1.75rem !important;
+    }
+  }
+
+  .ngx-header-menu-action {
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.5rem;
+
+    .user {
+      .username {
+        position: absolute;
+        top: 25%;
+      }
+
+      .ant-menu-title-content {
+        font-size: map-get($fontSize, menu) !important;
+        margin-left: 2.1875rem !important;
+      }
+    }
+  }
+
+}

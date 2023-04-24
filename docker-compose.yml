@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  react-ant-dev:
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - "/app/node_modules"
+      - "./:/app"
+  react-ant-prod:
+    container_name: arx-iems-frontend
+    build: .
+    ports:
+      - '1339:80'

@@ -1,0 +1,11 @@
+{
+  "common": {
+    "alert": {
+      "btnCancel": "취소",
+      "btnConfirm": "저장",
+      "successTitle": "저장성공",
+      "failTitle": "오류",
+      "warningTitle": "경고"
+    }
+  }
+}

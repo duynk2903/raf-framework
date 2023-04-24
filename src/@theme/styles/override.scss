@@ -1,0 +1,43 @@
+div,
+span,
+p,
+a,
+ul,
+li,
+svg,
+ol,
+strong,
+b,
+button,
+table,
+input {
+  font-family: 'Noto Sans KR', sans-serif !important;
+}
+
+.dark {
+  input, textarea, select {
+    &:-webkit-autofill {
+      &, &:hover, &:focus {
+        -webkit-text-fill-color: #ffffff;
+        -webkit-box-shadow: 0 0 0 1000px #141414 inset;
+        box-shadow: 0 0 0 1000px #141414 inset;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+    }
+  }
+}
+
+.light {
+  input, textarea, select {
+    &:-webkit-autofill {
+      &, &:hover, &:focus {
+        -webkit-text-fill-color: rgba(0, 0, 0, 0.88);
+        -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+        box-shadow: 0 0 0 1000px #ffffff inset;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+    }
+  }
+}
+
+

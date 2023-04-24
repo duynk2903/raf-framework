@@ -1,0 +1,19 @@
+.ngx-primary-layout {
+  .ngx-primary-body {
+    padding: 1.5rem 1.5rem 1.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 94vh;
+    min-height: 94vh;
+    transition: all 0.2s ease-in-out;
+
+    .ngx-primary-card {
+      .ant-card-body:first-child {
+        min-height: calc(100vh - 7rem);
+      }
+      .ngx-primary-outlet {
+        margin: 0;
+      }
+    }
+  }
+}

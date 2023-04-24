@@ -1,0 +1,11 @@
+{
+  "common": {
+    "alert": {
+      "btnCancel": "Cancel",
+      "btnConfirm": "OK",
+      "successTitle": "Success",
+      "failTitle": "Error",
+      "warningTitle": "Warning"
+    }
+  }
+}

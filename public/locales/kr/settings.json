@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "theme": {
+      "modeTitle": "페이지 스타일 설정",
+      "settingThemeTooltip": "설정",
+      "title": "테마 설정",
+      "colorTitle": "테마 색상",
+      "lightModeTitle": "라이트 모드",
+      "darkModeTitle": "다크 모드",
+      "globalSpinner": "글로벌 스피너",
+      "navigationMode": "탐색 모드",
+      "resetSetting": "테마 설정 재설정"
+    },
+    "color": {
+      "daybreakBlue": "데이브레이크 블루",
+      "dustRed": "더스트 레드",
+      "volcano": "화산",
+      "sunsetOrange": "선셋 오렌지",
+      "cyan": "시안",
+      "polarGreen": "폴라 그린",
+      "greekBlue": "그리스 블루",
+      "goldenPurple": "골든 퍼플"
+    }
+  }
+}

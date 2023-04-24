@@ -1,0 +1,65 @@
+.ngx-auth-layout {
+  height: 100vh;
+  background-color: #0D1527 !important;
+
+  .ngx-auth-container {
+
+    .auth-body {
+      height: 41.5rem;
+      .auth-left-container {
+        position: inherit;
+        background: url("../../../../public/images/login_bg.png") no-repeat;
+        background-size: cover;
+        height: 100%;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        text-align: center;
+
+        .logo {
+          width: 19.375rem;
+          height: 15.375rem;
+        }
+
+        .title-iot {
+          color: white;
+          letter-spacing: 0.0125rem;
+        }
+
+        .description-iot {
+          color: white;
+        }
+
+        .about-button {
+          background-color: #26D57F;
+          height: 3.4375rem;
+          width: 18.625rem;
+          color: white;
+          font-weight: bold;
+          font-size: 1.125rem;
+        }
+
+      }
+
+      .auth-right-container {
+        padding: 3rem 3rem 3rem 3rem !important;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+  }
+
+  .ngx-auth-footer {
+    text-align: center;
+    .address, .hotline {
+      color: #8F919F !important;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 0.9125rem;
+      letter-spacing: 0.0325rem
+    }
+
+    .hotline {
+      margin-top: 0.1875rem;
+    }
+  }
+}

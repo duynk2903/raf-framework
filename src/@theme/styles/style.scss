@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  background-color: rgb(36, 37, 37) !important;
+  font-family: 'Noto Sans KR', sans-serif !important;
+}
+
+::-webkit-scrollbar {
+  background-color: #2b2d2d;
+  color: #aca496;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #242525;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4e5151;
+}

@@ -1,0 +1,6 @@
+@import "@theme/styles/variable";
+
+.ngx-sidebar {
+  top: map-get($theme, headerHeight) !important;
+  transition: all 0.5s ease-in-out;
+}
