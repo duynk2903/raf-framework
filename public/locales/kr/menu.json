@@ -56,6 +56,17 @@
         "custom": "맞춤 아이콘"
       }
     },
+    "breadcrumb": {
+      "dashboard": "계기반",
+      "error": {
+        "title": "오류",
+        "children": {
+          "notfound": "찾을 수 없음",
+          "forbidden": "금지",
+          "serverError": "인터넷 서버 오류"
+        }
+      }
+    },
     "dashboard": "계기반",
     "profile": "프로필",
     "logout": "로그 아웃",

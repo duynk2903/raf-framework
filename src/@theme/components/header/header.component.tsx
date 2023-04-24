@@ -11,7 +11,7 @@ import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons'
  * @constructor
  */
 const HeaderComponent: FC = () => {
-  const { listMenuConfigs, listHeaderMenuAction, sidebarState, handleCollapse } = useHeader()
+  const { listMenuConfigs, listHeaderMenuAction, sidebarState, handleCollapse, navigateToHome } = useHeader()
   return (
     <Header className="ngx-header-container" style={{ position: 'sticky', top: 0, zIndex: 1, width: '100%' }}>
       <Row>
@@ -24,7 +24,7 @@ const HeaderComponent: FC = () => {
           />
         )}
 
-        <Col span={2} className="header-logo">
+        <Col span={2} className="header-logo" onClick={navigateToHome}>
           <Typography.Title className="mr-1" level={2}>
             --R
           </Typography.Title>

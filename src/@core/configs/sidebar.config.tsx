@@ -11,6 +11,8 @@ import {
 import { MenuType } from '@core/enums/menu.enum'
 import React from 'react'
 import { TFunction } from 'i18next'
+import _ from 'lodash'
+import { ErrorRouterLink } from '@core/enums/router.enum'
 
 /**
  * The left sidebar configuration
@@ -23,15 +25,15 @@ const sidebarConfigs = (translate: TFunction): MenuProps[MenuType.ITEMS] => [
     children: [
       {
         label: translate('menu.dashboards.children.analytics'),
-        key: 1
+        key: _.uniqueId()
       },
       {
         label: translate('menu.dashboards.children.monitor'),
-        key: 2
+        key: _.uniqueId()
       },
       {
         label: translate('menu.dashboards.children.workspace'),
-        key: 3
+        key: _.uniqueId()
       }
     ]
   },
@@ -42,15 +44,15 @@ const sidebarConfigs = (translate: TFunction): MenuProps[MenuType.ITEMS] => [
     children: [
       {
         label: translate('menu.form.children.basic'),
-        key: 4
+        key: _.uniqueId()
       },
       {
         label: translate('menu.form.children.step'),
-        key: 5
+        key: _.uniqueId()
       },
       {
         label: translate('menu.form.children.advanced'),
-        key: 5
+        key: _.uniqueId()
       }
     ]
   },
@@ -61,19 +63,19 @@ const sidebarConfigs = (translate: TFunction): MenuProps[MenuType.ITEMS] => [
     children: [
       {
         label: translate('menu.list.children.search'),
-        key: 6
+        key: _.uniqueId()
       },
       {
         label: translate('menu.list.children.step'),
-        key: 7
+        key: _.uniqueId()
       },
       {
         label: translate('menu.list.children.basic'),
-        key: 8
+        key: _.uniqueId()
       },
       {
         label: translate('menu.list.children.card'),
-        key: 9
+        key: _.uniqueId()
       }
     ]
   },
@@ -84,11 +86,11 @@ const sidebarConfigs = (translate: TFunction): MenuProps[MenuType.ITEMS] => [
     children: [
       {
         label: translate('menu.profiles.children.basic'),
-        key: 10
+        key: _.uniqueId()
       },
       {
         label: translate('menu.profiles.children.advanced'),
-        key: 11
+        key: _.uniqueId()
       }
     ]
   },
@@ -99,38 +101,38 @@ const sidebarConfigs = (translate: TFunction): MenuProps[MenuType.ITEMS] => [
     children: [
       {
         label: translate('menu.alert.children.warning'),
-        key: 12
+        key: _.uniqueId()
       },
       {
         label: translate('menu.alert.children.success'),
-        key: '13.3'
+        key: _.uniqueId()
       },
       {
         label: translate('menu.alert.children.confirm'),
-        key: '14.3'
+        key: _.uniqueId()
       },
       {
         label: translate('menu.alert.children.error'),
-        key: '15.3'
+        key: _.uniqueId()
       }
     ]
   },
   {
     label: translate('menu.exception.title'),
-    key: 'exceptions',
+    key: ErrorRouterLink.BASE_PATH,
     icon: <WarningOutlined />,
     children: [
       {
         label: translate('menu.exception.children.403'),
-        key: 14
+        key: ErrorRouterLink.FORBIDDEN
       },
       {
         label: translate('menu.exception.children.404'),
-        key: 15
+        key: ErrorRouterLink.NOT_FOUND
       },
       {
         label: translate('menu.exception.children.500'),
-        key: 16
+        key: ErrorRouterLink.INTERNAL_SERVER_ERROR
       }
     ]
   },
@@ -141,11 +143,11 @@ const sidebarConfigs = (translate: TFunction): MenuProps[MenuType.ITEMS] => [
     children: [
       {
         label: translate('menu.icons.children.default'),
-        key: 17
+        key: _.uniqueId()
       },
       {
         label: translate('menu.icons.children.custom'),
-        key: 18
+        key: _.uniqueId()
       }
     ]
   }

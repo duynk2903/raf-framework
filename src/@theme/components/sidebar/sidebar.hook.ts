@@ -5,6 +5,7 @@ import { useRecoilState } from 'recoil'
 import { sidebarSelector } from '@core/components/ngx-app/app.recoil'
 import { useTranslation } from 'react-i18next'
 import { TranslateEnum } from '@core/enums/translate.enum'
+import { useNavigate } from 'react-router-dom'
 
 /**
  * Use sidebar hooks
@@ -16,6 +17,7 @@ const useSideBar = () => {
   const [sidebarState, setSidebarState] = useRecoilState(sidebarSelector)
   const { t: translate } = useTranslation([TranslateEnum.MENU])
   const listMenuSidebar = useMemo(() => sidebarConfigs(translate), [translate])
+  const navigate = useNavigate()
 
   /**
    * Handle break point screen width change and set auto collapse sidebar
@@ -30,11 +32,23 @@ const useSideBar = () => {
     [sidebarState]
   )
 
+  /**
+   * Handle click menu and start navigation
+   */
+  const handleSelectedMenuAndStartNavigate = useCallback(
+    ({ keyPath: segments }: { keyPath: string[] }) => {
+      const routerPath = `/${segments.reverse().join('/')}`
+      navigate(routerPath)
+    },
+    [navigate]
+  )
+
   return {
     listMenuSidebar,
     colorBgContainer,
     handleAutoBreakPointResponsive,
-    sidebarState
+    sidebarState,
+    handleSelectedMenuAndStartNavigate
   }
 }
 

@@ -3,8 +3,16 @@
     "notFound": {
       "title": "페이지를 찾을 수 없음",
       "subtitle": "URL을 잘못 입력했거나",
-      "subTitle2": "또는 더 이상 여기에 없는 페이지를 요청합니다.",
-      "backBtn": "이전 페이지로 돌아가기"
-    }
+      "subTitle2": "또는 더 이상 여기에 없는 페이지를 요청합니다."
+    },
+    "forbidden": {
+      "title": "금지",
+      "subTitle": "죄송합니다. 이 페이지에 액세스할 수 있는 권한이 없습니다."
+    },
+    "serverError": {
+      "title": "서버 오류",
+      "subTitle": "죄송합니다. 문제가 발생했습니다."
+    },
+    "backBtn": "이전 페이지로 돌아가기"
   }
 }

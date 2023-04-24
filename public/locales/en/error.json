@@ -1,10 +1,19 @@
 {
   "error": {
     "notFound": {
+      "status": "403",
       "title": "Page not found",
       "subtitle": "You’re either misspelling the URL",
-      "subTitle2": "or requesting a page that no longer here.",
-      "backBtn": " Back to previous page"
-    }
+      "subTitle2": "or requesting a page that no longer here."
+    },
+    "forbidden": {
+      "title": "Forbidden",
+      "subTitle": "Sorry, you are not authorized to access this page."
+    },
+    "serverError": {
+      "title": "Server Error",
+      "subTitle": "Sorry, something went wrong."
+    },
+    "backBtn": "Back to previous page"
   }
 }

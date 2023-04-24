@@ -7,7 +7,7 @@ import { GENERIC_VALUE_TYPE } from '@core/enums/common.enum'
 import { useRecoilState, useSetRecoilState } from 'recoil'
 import { applicationInitialState, authorizationSelector, sidebarSelector } from '@core/components/ngx-app/app.recoil'
 import { useNavigate } from 'react-router-dom'
-import { AuthRouterLink } from '@core/enums/router.enum'
+import { AuthRouterLink, RouterLink } from '@core/enums/router.enum'
 
 /**
  * Use common header hook
@@ -25,6 +25,13 @@ const useHeader = () => {
     setAuthorization(applicationInitialState.authorization)
     clearRefreshTokenAndCompanyIdInCookie()
     navigate(`/${AuthRouterLink.BASE_PATH}/${AuthRouterLink.LOGIN}`)
+  }, [navigate])
+
+  /**
+   * Handle click to logo and navigate to home page
+   */
+  const navigateToHome = useCallback(() => {
+    navigate(RouterLink.HOME)
   }, [navigate])
 
   /**
@@ -58,7 +65,8 @@ const useHeader = () => {
     listHeaderMenuAction,
     sidebarState,
     setSidebarState,
-    handleCollapse
+    handleCollapse,
+    navigateToHome
   }
 }
 

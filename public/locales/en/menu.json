@@ -56,6 +56,17 @@
         "custom": "Custom icons"
       }
     },
+    "breadcrumb": {
+      "dashboard": "Dashboard",
+      "error": {
+        "title": "Error",
+        "children": {
+          "notfound": "Not Found",
+          "forbidden": "Forbidden",
+          "serverError": "Internal server error"
+        }
+      }
+    },
     "dashboard": "Dashboard",
     "profile": "Profile",
     "logout": "Logout",
