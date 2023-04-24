@@ -1,14 +1,14 @@
-import { FC } from 'react'
 import { Col, Row } from 'antd'
+import { FC } from 'react'
 import { Outlet } from 'react-router-dom'
 
 /**
- * Error layout component
+ * Dashboard module
  * @constructor
  */
-const ErrorLayout: FC = () => {
+const DashboardModule: FC = () => {
   return (
-    <Row gutter={[16, 16]}>
+    <Row className="dashboard-module">
       <Col span={24}>
         <Outlet />
       </Col>
@@ -16,4 +16,4 @@ const ErrorLayout: FC = () => {
   )
 }
 
-export default ErrorLayout
+export default DashboardModule

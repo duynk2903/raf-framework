@@ -12,7 +12,7 @@ import { MenuType } from '@core/enums/menu.enum'
 import React from 'react'
 import { TFunction } from 'i18next'
 import _ from 'lodash'
-import { ErrorRouterLink } from '@core/enums/router.enum'
+import { DashboardRouterLink, ErrorRouterLink } from '@core/enums/router.enum'
 
 /**
  * The left sidebar configuration
@@ -20,12 +20,12 @@ import { ErrorRouterLink } from '@core/enums/router.enum'
 const sidebarConfigs = (translate: TFunction): MenuProps[MenuType.ITEMS] => [
   {
     label: translate('menu.dashboards.title'),
-    key: 'dashboard',
+    key: DashboardRouterLink.BASE_PATH,
     icon: <DashboardOutlined />,
     children: [
       {
         label: translate('menu.dashboards.children.analytics'),
-        key: _.uniqueId()
+        key: DashboardRouterLink.ANALYTIC
       },
       {
         label: translate('menu.dashboards.children.monitor'),

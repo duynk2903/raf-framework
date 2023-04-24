@@ -10,6 +10,8 @@
     width: 4rem !important;
     height: 4rem;
     font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+
     &, &:hover {
       background: none !important;
     }
@@ -21,6 +23,11 @@
     justify-content: center;
     align-items: center;
     padding-top: 10px;
+
+    .ant-typography {
+      color: rgba(255, 255, 255, 0.85) !important;
+    }
+
     .logo {
       float: left;
       width: 2rem;

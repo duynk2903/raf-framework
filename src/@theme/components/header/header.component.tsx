@@ -33,16 +33,19 @@ const HeaderComponent: FC = () => {
             F--
           </Typography.Title>
         </Col>
-        <Col span={16}>
-          <Menu
-            className="ngx-header-menu"
-            theme="dark"
-            mode="horizontal"
-            defaultSelectedKeys={['dashboard']}
-            items={listMenuConfigs}
-          />
-        </Col>
-        <Col span={6}>
+        {!sidebarState?.isEnabled && (
+          <Col span={16}>
+            <Menu
+              className="ngx-header-menu"
+              theme="dark"
+              mode="horizontal"
+              defaultSelectedKeys={['dashboard']}
+              items={listMenuConfigs}
+            />
+          </Col>
+        )}
+
+        <Col span={!sidebarState?.isEnabled ? 6 : 22}>
           <Menu className="ngx-header-menu-action" theme="dark" mode="horizontal" items={listHeaderMenuAction} />
         </Col>
       </Row>
