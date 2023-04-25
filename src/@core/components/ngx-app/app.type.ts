@@ -9,6 +9,6 @@ export interface NgxApplicationState {
 export interface SidebarState {
   collapsed: boolean
   isEnabled: boolean
-  selectedKey?: string
-  openKeys?: string[]
+  selectedKey: string[]
+  openKeys: string[]
 }

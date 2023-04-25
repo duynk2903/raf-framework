@@ -3,14 +3,14 @@ import { ThemeColorStyle, ThemeStyle } from '@core/enums/theme.enum'
 import { ThemeColorSettingModel, ThemeSettingModel } from '@core/models/theme-setting.model'
 import { TFunction } from 'i18next'
 
-const { darkAlgorithm, compactAlgorithm } = theme
+const { darkAlgorithm, defaultAlgorithm } = theme
 
 /**
  * The default theme configuration
  * @param {ThemeSettingModel} themeSetting
  */
 const themeConfig = ({ mode, themeColor }: ThemeSettingModel): ThemeConfig => ({
-  algorithm: [mode == ThemeStyle.DARK ? darkAlgorithm : compactAlgorithm],
+  algorithm: [mode == ThemeStyle.DARK ? darkAlgorithm : defaultAlgorithm],
   token: {
     colorPrimary: themeColor ?? ThemeColorStyle.DAYBREAK_BLUE
   }

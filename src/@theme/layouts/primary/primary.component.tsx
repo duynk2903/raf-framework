@@ -15,11 +15,10 @@ import NgxLoader from '@core/components/ngx-loader/loader.component'
  * @constructor
  */
 const PrimaryLayout: FC = () => {
-  const { colorBgContainer, sidebarState, isLoading } = usePrimaryLayout()
-  const { isEnabled } = sidebarState
+  const { colorBgContainer, isLoading, isEnabled, collapsed } = usePrimaryLayout()
   const layoutPaddingLeft = !isEnabled
     ? 0
-    : !sidebarState?.collapsed
+    : !collapsed
     ? themeVariables.sidebarWidth
     : themeVariables.sidebarWidthCollapsed
   return (
@@ -27,34 +26,31 @@ const PrimaryLayout: FC = () => {
       <NgxLoader isLoading={isLoading}>
         <>
           <HeaderComponent />
-          {isEnabled && (
-            <Layout hasSider>
-              <SidebarComponent />
-            </Layout>
-          )}
-
           <Layout
             className="ngx-primary-body"
             style={{
               marginLeft: layoutPaddingLeft
             }}>
-            <Card className="ngx-primary-card">
-              <Row>
-                <Col span={24} style={{ background: colorBgContainer }}>
-                  <NgxBreadCrumb />
-                </Col>
+            {isEnabled && <SidebarComponent />}
+            <Layout style={{ padding: '24px 24px 24px' }}>
+              <Card className="ngx-primary-card">
+                <Row>
+                  <Col span={24} style={{ background: colorBgContainer }}>
+                    <NgxBreadCrumb />
+                  </Col>
 
-                <Col span={24}>
-                  <Content
-                    className="ngx-primary-outlet"
-                    style={{
-                      background: colorBgContainer
-                    }}>
-                    <Outlet />
-                  </Content>
-                </Col>
-              </Row>
-            </Card>
+                  <Col span={24}>
+                    <Content
+                      className="ngx-primary-outlet"
+                      style={{
+                        background: colorBgContainer
+                      }}>
+                      <Outlet />
+                    </Content>
+                  </Col>
+                </Row>
+              </Card>
+            </Layout>
           </Layout>
         </>
       </NgxLoader>

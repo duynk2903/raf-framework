@@ -63,7 +63,7 @@ const useThemeSettings = () => {
         isEnabled: isTopNavigation
       })
     },
-    [appState]
+    [sidebar]
   )
 
   /**

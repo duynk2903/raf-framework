@@ -1,6 +1,5 @@
 .ngx-primary-layout {
   .ngx-primary-body {
-    padding: 1.5rem 1.5rem 1.5rem;
     overflow-y: auto;
     overflow-x: hidden;
     max-height: 94vh;
@@ -13,6 +12,7 @@
       }
       .ngx-primary-outlet {
         margin: 0;
+        padding: 24px;
       }
     }
   }

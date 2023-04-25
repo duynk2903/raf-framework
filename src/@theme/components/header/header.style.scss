@@ -1,7 +1,7 @@
 @import "@theme/styles/variable";
 
 .ngx-header-container {
-  height: map-get($theme, headerHeight) !important;
+  height: map-get($theme, --header-height) !important;
   padding-right: 0 !important;
 
   .collapse-btn {
@@ -20,9 +20,9 @@
   .header-logo {
     cursor: pointer;
     display: inline-flex;
-    justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 0.625rem;
+    padding-left: 24px;
 
     .ant-typography {
       color: rgba(255, 255, 255, 0.85) !important;
@@ -42,20 +42,19 @@
   }
 
   .ant-menu-item {
-    font-size: map-get($fontSize, menu) !important;
+    font-size: map-get($fontSize, --font-size-menu-text) !important;
 
     svg {
-      font-size: map-get($fontSize, svg) !important;
+      font-size: map-get($fontSize, --font-size-svg-defaut) !important;
     }
   }
 
   .ngx-header-menu {
     height: 100%;
     align-items: center;
-    padding-left: 2.7625rem;
 
-    .ant-menu-item:not(:first-child) {
-      padding-left: 1.75rem !important;
+    .ant-menu-submenu:not(:first-child), .ant-menu-item:not(:first-child) {
+      padding: 0 1.25rem !important;
     }
   }
 
@@ -72,7 +71,7 @@
       }
 
       .ant-menu-title-content {
-        font-size: map-get($fontSize, menu) !important;
+        font-size: map-get($fontSize, --font-size-menu-text) !important;
         margin-left: 2.1875rem !important;
       }
     }

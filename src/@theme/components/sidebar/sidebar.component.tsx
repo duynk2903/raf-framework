@@ -12,7 +12,7 @@ import MenuComponent from '@theme/components/menu/menu.component'
  * @constructor
  */
 const SidebarComponent: FC<SidebarProps> = () => {
-  const { handleAutoBreakPointResponsive, sidebarState } = useSideBar()
+  const { handleAutoBreakPointResponsive, sidebarState, colorBgContainer } = useSideBar()
   return (
     <Sider
       className="ngx-sidebar"
@@ -25,10 +25,10 @@ const SidebarComponent: FC<SidebarProps> = () => {
       trigger={null}
       style={{
         overflow: 'auto',
-        height: '100vh',
         position: 'fixed',
         left: 0,
-        bottom: 0
+        bottom: 0,
+        backgroundColor: colorBgContainer
       }}>
       <MenuComponent />
     </Sider>

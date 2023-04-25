@@ -8,19 +8,20 @@ import { MenuProps } from '@theme/components/menu/menu.type'
  * @param className
  * @param theme
  * @param mode
+ * @param isTopMenu
  * @constructor
  */
-const MenuComponent: FC<MenuProps> = ({ className, theme = undefined, mode = 'inline' }) => {
+const MenuComponent: FC<MenuProps> = ({ className, theme = undefined, mode = 'inline', isTopMenu = false }) => {
   const { sidebarState, onOpenChange, handleSelectedMenuAndStartNavigate, listMenuSidebar } = useMenu()
   return (
     <Menu
       mode={mode}
       theme={theme}
       className={className}
-      selectedKeys={[sidebarState?.selectedKey]}
-      openKeys={sidebarState?.openKeys}
+      selectedKeys={sidebarState?.selectedKey ?? []}
+      openKeys={!isTopMenu ? sidebarState?.openKeys : undefined}
       style={{ height: '100%', borderRight: 0 }}
-      onOpenChange={onOpenChange}
+      onOpenChange={!isTopMenu ? onOpenChange : undefined}
       items={listMenuSidebar}
       onSelect={handleSelectedMenuAndStartNavigate}
     />

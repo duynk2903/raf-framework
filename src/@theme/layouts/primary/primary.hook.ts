@@ -15,8 +15,8 @@ const usePrimaryLayout = () => {
 
   return {
     colorBgContainer,
-    sidebarState,
-    isLoading
+    isLoading,
+    ...sidebarState
   }
 }
 

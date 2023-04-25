@@ -1,3 +1,5 @@
+@import 'variable';
+
 div,
 span,
 p,
@@ -11,7 +13,7 @@ b,
 button,
 table,
 input {
-  font-family: 'Noto Sans KR', sans-serif !important;
+  font-family: map-get($theme, --font-family), sans-serif !important;
 }
 
 .dark {
@@ -25,6 +27,23 @@ input {
       }
     }
   }
+
+  ::-webkit-scrollbar {
+    background-color: map-get($theme, --scrollbar-background-color-default);
+    color: map-get($theme, --scrollbar-color-default);
+    width: map-get($theme, --scrollbar-width);
+    height: map-get($theme, --scrollbar-height);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: map-get($theme, --scrollbar-background-dark);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: map-get($theme, --scrollbar-background-thumb);
+    cursor: pointer;
+    border-radius: map-get($theme, --scrollbar-thumb-border-radius);
+  }
 }
 
 .light {
@@ -37,6 +56,22 @@ input {
         transition: background-color 5000s ease-in-out 0s;
       }
     }
+  }
+
+  ::-webkit-scrollbar {
+    color: map-get($theme, --scrollbar-color-default);
+    width: map-get($theme, --scrollbar-width);
+    height: map-get($theme, --scrollbar-height);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: map-get($theme, --scrollbar-corner-background-light);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: map-get($theme, --scrollbar-thumb-background-light);
+    cursor: pointer;
+    border-radius: map-get($theme, --scrollbar-thumb-border-radius);
   }
 }
 

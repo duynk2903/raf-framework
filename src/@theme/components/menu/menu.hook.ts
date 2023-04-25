@@ -42,8 +42,8 @@ const useMenu = () => {
    * Effect check when navigation or change router. The sidebar need re check active routes
    */
   useEffect(() => {
-    const listMenuFlats = flatMenus(listMenuSidebar)
-    if (listMenuFlats.length > 0) {
+    if (listMenuSidebar.length > 0) {
+      const listMenuFlats = flatMenus(listMenuSidebar)
       const routerActive: MenuModel | any = _.find(
         listMenuFlats,
         (item) => item && `/${item.parentId}/${item.key}` === pathname
@@ -57,19 +57,12 @@ const useMenu = () => {
         }
         setSidebarState({
           ...sidebarState,
-          selectedKey: key,
+          selectedKey: [key],
           openKeys: cloneOpenKeys
         })
       }
     }
-  }, [navigate, pathname, sidebarState?.isEnabled])
-
-  useEffect(() => {
-    setSidebarState({
-      ...sidebarState,
-      openKeys: []
-    })
-  }, [sidebarState.isEnabled])
+  }, [navigate, listMenuSidebar])
 
   return {
     listMenuSidebar,

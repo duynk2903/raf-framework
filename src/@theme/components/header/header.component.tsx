@@ -14,7 +14,9 @@ import MenuComponent from '@theme/components/menu/menu.component'
 const HeaderComponent: FC = () => {
   const { listHeaderMenuAction, sidebarState, handleCollapse, navigateToHome } = useHeader()
   return (
-    <Header className="ngx-header-container" style={{ position: 'sticky', top: 0, zIndex: 1, width: '100%' }}>
+    <Header
+      className="ngx-header-container"
+      style={{ position: 'sticky', top: 0, zIndex: 1, width: '100%', paddingLeft: !sidebarState?.isEnabled ? 0 : 50 }}>
       <Row>
         {sidebarState?.isEnabled && (
           <Button
@@ -25,7 +27,7 @@ const HeaderComponent: FC = () => {
           />
         )}
 
-        <Col span={2} className="header-logo" onClick={navigateToHome}>
+        <Col span={3} className="header-logo" onClick={navigateToHome}>
           <Typography.Title className="mr-1" level={2}>
             --R
           </Typography.Title>
@@ -35,12 +37,12 @@ const HeaderComponent: FC = () => {
           </Typography.Title>
         </Col>
         {!sidebarState?.isEnabled && (
-          <Col span={16}>
-            <MenuComponent className="ngx-header-menu" theme="dark" mode="horizontal" />
+          <Col span={18}>
+            <MenuComponent className="ngx-header-menu" theme="dark" mode="horizontal" isTopMenu />
           </Col>
         )}
 
-        <Col span={!sidebarState?.isEnabled ? 6 : 22}>
+        <Col span={!sidebarState?.isEnabled ? 3 : 21}>
           <Menu className="ngx-header-menu-action" theme="dark" mode="horizontal" items={listHeaderMenuAction} />
         </Col>
       </Row>

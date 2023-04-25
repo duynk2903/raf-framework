@@ -1,10 +1,23 @@
 $fontSize: (
-        menu: 0.9rem,
-        svg: 0.9rem
+        --font-size-menu-text: 0.9rem,
+        --font-size-svg-defaut: 0.9rem
 );
 
 $theme: (
-        sideBarWidth: 240px,
-        sidebarWidthCollapsed: 60px,
-        headerHeight: 4.1rem,
+        --font-family: 'Noto Sans KR',
+        --body-fullscreen-height: 100vh,
+        --body-default-margin: 0,
+        --body-overflow-default: hidden,
+        --default-background: rgb(36, 37, 37),
+        --header-height: 4.1rem,
+        --default-fullscreen-height: calc(100% - 4rem),
+        --scrollbar-width: .3125rem,
+        --scrollbar-height: .3125rem,
+        --scrollbar-background-color-default: #2b2d2d,
+        --scrollbar-color-default: #aca496,
+        --scrollbar-background-dark: #252547,
+        --scrollbar-background-thumb: #4e5151,
+        --scrollbar-thumb-border-radius: 0.15625rem,
+        --scrollbar-corner-background-light: #f7f9fc,
+        --scrollbar-thumb-background-light: #e4e9f2
 )

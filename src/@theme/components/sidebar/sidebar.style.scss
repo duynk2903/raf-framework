@@ -1,6 +1,8 @@
 @import "@theme/styles/variable";
 
 .ngx-sidebar {
-  top: map-get($theme, headerHeight) !important;
+  top: map-get($theme, --header-height) !important;
+  max-height: map-get($theme, --default-fullscreen-height);
+  min-height: map-get($theme, --default-fullscreen-height);
   transition: all 0.5s ease-in-out;
 }

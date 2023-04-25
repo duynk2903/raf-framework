@@ -4,11 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: change router config">
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: Fix auth layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/en/auth.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/auth.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/layouts/auth/auth.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/auth/auth.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/layouts/auth/auth.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/auth/auth.style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-app/app.recoil.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-app/app.recoil.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-app/app.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-app/app.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-theme-setting/setting.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-theme-setting/setting.hook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/configs/theme.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/theme.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/components/header/header.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/header/header.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/components/header/header.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/header/header.style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/components/menu/menu.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/menu/menu.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/components/menu/menu.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/menu/menu.hook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/components/menu/menu.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/menu/menu.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.hook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.hook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/styles/override.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/styles/override.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/styles/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/styles/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/styles/variable.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +55,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/duynk9/Desktop/CMC/react-ant-framework/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "ts.external.directory.path": "C:\\Users\\220720-0002\\Desktop\\study\\react-ant-framework\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -82,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682345332751</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Tommy: Fix auth layout">
+      <created>1682383234062</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682383234062</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,7 +112,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Tommy: fix default open sidebar when navigate change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: fix default open sidebar when navigate change" />
+    <MESSAGE value="Tommy: Fix auth layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: Fix auth layout" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

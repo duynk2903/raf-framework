@@ -19,7 +19,7 @@ const applicationInitialState: NgxApplicationState = {
   sidebar: {
     collapsed: false,
     isEnabled: true,
-    selectedKey: String.EMPTY_STRING,
+    selectedKey: [],
     openKeys: []
   },
   isLoading: false
