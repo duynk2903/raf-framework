@@ -2,7 +2,7 @@ import { headerMenuActions } from '@core/configs/menu.config'
 import { useTranslation } from 'react-i18next'
 import { TranslateEnum } from '@core/enums/translate.enum'
 import { useCallback, useMemo } from 'react'
-import { clearRefreshTokenAndCompanyIdInCookie, getAuthorizationCertificate } from '@core/helpers/auth.helper'
+import { clearRefreshToken, getAuthorizationCertificate } from '@core/helpers/auth.helper'
 import { GENERIC_VALUE_TYPE } from '@core/enums/common.enum'
 import { useRecoilState, useSetRecoilState } from 'recoil'
 import { applicationInitialState, authorizationSelector, sidebarSelector } from '@core/components/ngx-app/app.recoil'
@@ -23,7 +23,7 @@ const useHeader = () => {
    */
   const logOutUser = useCallback(() => {
     setAuthorization(applicationInitialState.authorization)
-    clearRefreshTokenAndCompanyIdInCookie()
+    clearRefreshToken()
     navigate(`/${AuthRouterLink.BASE_PATH}/${AuthRouterLink.LOGIN}`)
   }, [navigate])
 

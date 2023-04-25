@@ -6,13 +6,21 @@
     min-height: 94vh;
     transition: all 0.2s ease-in-out;
 
+    @media screen and (min-width: 1366px) {
+      .wide {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+    }
+
     .ngx-primary-card {
       .ant-card-body:first-child {
         min-height: calc(100vh - 7rem);
       }
       .ngx-primary-outlet {
         margin: 0;
-        padding: 24px;
       }
     }
   }

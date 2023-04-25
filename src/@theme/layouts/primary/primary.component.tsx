@@ -27,12 +27,13 @@ const PrimaryLayout: FC = () => {
         <>
           <HeaderComponent />
           <Layout
+            hasSider
             className="ngx-primary-body"
             style={{
               marginLeft: layoutPaddingLeft
             }}>
             {isEnabled && <SidebarComponent />}
-            <Layout style={{ padding: '24px 24px 24px' }}>
+            <Layout style={{ padding: '24px 24px 24px' }} className={!isEnabled ? 'wide' : ''}>
               <Card className="ngx-primary-card">
                 <Row>
                   <Col span={24} style={{ background: colorBgContainer }}>

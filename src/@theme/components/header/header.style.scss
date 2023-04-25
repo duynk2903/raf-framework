@@ -19,20 +19,35 @@
 
   .header-logo {
     cursor: pointer;
-    display: inline-flex;
     align-items: center;
-    padding-top: 0.625rem;
-    padding-left: 24px;
+    justify-content: start;
+    padding-left: 1rem;
+    display: inline-flex;
+    padding-top: 0.5rem;
+    position: relative;
+    min-width: 10.3125rem !important;
+    height: 100%;
+    overflow: hidden;
 
     .ant-typography {
       color: rgba(255, 255, 255, 0.85) !important;
+      font-weight: 500;
     }
 
     .logo {
-      float: left;
       width: 2rem;
       height: 2rem;
-      margin-top: -10px;
+      margin-top: -5px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+   .header-logo {
+     .ant-typography {
+       .logo-text {
+         display: none;
+       }
+     }
     }
   }
 
@@ -50,8 +65,10 @@
   }
 
   .ngx-header-menu {
-    height: 100%;
     align-items: center;
+    padding-left: 3.5rem;
+    height: 100%;
+    max-height: map-get($theme, --header-height);
 
     .ant-menu-submenu:not(:first-child), .ant-menu-item:not(:first-child) {
       padding: 0 1.25rem !important;
@@ -60,6 +77,7 @@
 
   .ngx-header-menu-action {
     height: 100%;
+    max-height: map-get($theme, --header-height);
     align-items: center;
     justify-content: flex-end;
     padding-right: 0.5rem;

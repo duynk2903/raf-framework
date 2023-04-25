@@ -59,7 +59,7 @@ const decodeJwtTokenAndConvertToAuthorizationModel = (jwtToken: string) => {
 /**
  * Clear token
  */
-const clearRefreshTokenAndCompanyIdInCookie = () => {
+const clearRefreshToken = () => {
   removeCookieByName(CookieEnum.REFRESH_TOKEN)
 }
 
@@ -67,14 +67,14 @@ const clearRefreshTokenAndCompanyIdInCookie = () => {
  * Function handle logout
  */
 const logOut = () => {
-  clearRefreshTokenAndCompanyIdInCookie()
+  clearRefreshToken()
   window.location.href = '/auth/login'
 }
 
 export {
   getAuthorizationCertificate,
   isAuthenticated,
-  clearRefreshTokenAndCompanyIdInCookie,
+  clearRefreshToken,
   logOut,
   decodeJwtTokenAndConvertToAuthorizationModel
 }

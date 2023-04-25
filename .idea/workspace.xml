@@ -4,26 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: Fix auth layout">
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: fix style primary layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-app/app.recoil.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-app/app.recoil.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-app/app.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-app/app.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-theme-setting/setting.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-theme-setting/setting.hook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/configs/theme.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/theme.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-theme-setting/setting.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-theme-setting/setting.style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/helpers/auth.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/helpers/auth.helper.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@theme/components/header/header.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/header/header.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/components/header/header.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/header/header.hook.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@theme/components/header/header.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/header/header.style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/components/menu/menu.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/menu/menu.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/components/menu/menu.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/menu/menu.hook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/components/menu/menu.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/menu/menu.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.hook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/sidebar/sidebar.style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.hook.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/styles/override.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/styles/override.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/styles/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/styles/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/styles/variable.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682383234062</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Tommy: fix style primary layout">
+      <created>1682401433909</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682401433909</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +109,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Tommy: fix default open sidebar when navigate change" />
     <MESSAGE value="Tommy: Fix auth layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: Fix auth layout" />
+    <MESSAGE value="Tommy: fix style primary layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: fix style primary layout" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

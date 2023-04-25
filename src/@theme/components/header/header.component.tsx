@@ -27,22 +27,24 @@ const HeaderComponent: FC = () => {
           />
         )}
 
-        <Col span={3} className="header-logo" onClick={navigateToHome}>
-          <Typography.Title className="mr-1" level={2}>
-            --R
-          </Typography.Title>
-          <NgxIcon name="/images/logo.svg" className="logo" />
-          <Typography.Title className="ml-1" level={2}>
-            F--
-          </Typography.Title>
+        <Col
+          span={!sidebarState?.isEnabled ? 4 : 12}
+          onClick={navigateToHome}
+          style={{ paddingLeft: !sidebarState?.isEnabled ? 24 : 0 }}>
+          <div className="header-logo">
+            <Typography.Title className="mr-1" level={2}>
+              <span className="logo-text">--R</span> <NgxIcon name="/images/logo.svg" className="logo" />{' '}
+              <span className="logo-text">F--</span>
+            </Typography.Title>
+          </div>
         </Col>
         {!sidebarState?.isEnabled && (
-          <Col span={18}>
+          <Col span={16}>
             <MenuComponent className="ngx-header-menu" theme="dark" mode="horizontal" isTopMenu />
           </Col>
         )}
 
-        <Col span={!sidebarState?.isEnabled ? 3 : 21}>
+        <Col span={!sidebarState?.isEnabled ? 4 : 12}>
           <Menu className="ngx-header-menu-action" theme="dark" mode="horizontal" items={listHeaderMenuAction} />
         </Col>
       </Row>
