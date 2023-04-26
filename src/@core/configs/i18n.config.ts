@@ -6,15 +6,7 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import { TranslateLanguageEnum } from '@core/enums/translate.enum'
 import ko_KR from 'antd/locale/ko_KR'
 import en_US from 'antd/locale/en_US'
-
-/**
- * List languages supported by i18next
- * If you want to use other languages, you need to add them to this list
- */
-const listLanguage = {
-  kr: TranslateLanguageEnum.KOREA,
-  en: TranslateLanguageEnum.KOREA
-}
+import resources from '@core/locales/module'
 
 /**
  * List localization of ant design languages
@@ -33,12 +25,10 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    resources: resources,
     fallbackLng: TranslateLanguageEnum.ENGLISH,
-    lng: TranslateLanguageEnum.ENGLISH,
-    debug: false,
-    backend: {
-      loadPath: `${process.env.PUBLIC_URL}/locales/{{lng}}/{{ns}}.json`
-    },
+    debug: process.env.NODE_ENV === 'development',
+    saveMissing: true,
     interpolation: {
       escapeValue: false
     },
@@ -46,6 +36,7 @@ i18n
       useSuspense: false
     }
   })
+  .then(() => null)
 
-export { listLanguage, listLocales }
+export { listLocales }
 export default i18n

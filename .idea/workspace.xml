@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: fix responsive main layout">
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: fix header style.scss">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/en/auth.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/en/auth.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/en/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/en/common.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/en/error.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/en/error.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/en/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/en/menu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/en/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/en/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/kr/auth.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/kr/auth.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/kr/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/kr/common.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/kr/error.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/kr/error.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/kr/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/kr/menu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/kr/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/kr/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-app/app.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-app/app.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-loader/loader.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-loader/loader.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@core/configs/i18n.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/i18n.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@pages/login/login.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/login/login.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/components/header/header.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/header/header.style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.component.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +55,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\220720-0002\Desktop\study\react-ant-framework\src\@core" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -77,7 +89,7 @@
       <workItem from="1682343510306" duration="99000" />
       <workItem from="1682344362932" duration="1189000" />
       <workItem from="1682345561978" duration="2670000" />
-      <workItem from="1682467837606" duration="6509000" />
+      <workItem from="1682467837606" duration="10348000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
@@ -107,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682407075804</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tommy: fix header style.scss">
+      <created>1682474621464</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682474621464</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +137,8 @@
     <MESSAGE value="Tommy: Fix auth layout" />
     <MESSAGE value="Tommy: fix style primary layout" />
     <MESSAGE value="Tommy: fix responsive main layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: fix responsive main layout" />
+    <MESSAGE value="Tommy: fix header style.scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: fix header style.scss" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
