@@ -15,7 +15,7 @@ import { TFunction } from 'i18next'
 import { TranslateLanguageEnum } from '@core/enums/translate.enum'
 import { changeLanguage, getCurrentLanguage } from '@core/helpers/i18n.helper'
 import { MenuModel } from '@core/models/menu.model'
-import { DashboardRouterLink, ErrorRouterLink } from '@core/enums/router.enum'
+import { AlertRouterLink, DashboardRouterLink, ErrorRouterLink } from '@core/enums/router.enum'
 import _ from 'lodash'
 
 /**
@@ -101,24 +101,16 @@ const menusConfig = (translate: TFunction): MenuModel[] => [
   },
   {
     label: translate('menu.alert.title'),
-    key: 'alert',
+    key: AlertRouterLink.BASE_PATH,
     icon: <AlertOutlined />,
     children: [
       {
-        label: translate('menu.alert.children.warning'),
-        key: _.uniqueId()
+        label: translate('menu.alert.children.basic'),
+        key: AlertRouterLink.BASIC
       },
       {
-        label: translate('menu.alert.children.success'),
-        key: _.uniqueId()
-      },
-      {
-        label: translate('menu.alert.children.confirm'),
-        key: _.uniqueId()
-      },
-      {
-        label: translate('menu.alert.children.error'),
-        key: _.uniqueId()
+        label: translate('menu.alert.children.popup'),
+        key: AlertRouterLink.POPUP
       }
     ]
   },

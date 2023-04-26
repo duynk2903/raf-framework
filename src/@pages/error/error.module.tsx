@@ -11,7 +11,7 @@ import InternalServerError from './500/server-error.component'
  */
 const ErrorLayout: FC = () => {
   return (
-    <Row gutter={[16, 16]} className="error-layout">
+    <Row gutter={[16, 16]} className="error-layout-container">
       <Col span={24}>
         <Outlet />
       </Col>

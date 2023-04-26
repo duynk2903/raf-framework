@@ -9,7 +9,7 @@ import DashboardAnalytic from './analytics/analytics.component'
  */
 const DashboardLayout: FC = () => {
   return (
-    <Row className="dashboard-layout">
+    <Row className="dashboard-layout-container">
       <Col span={24}>
         <Outlet />
       </Col>

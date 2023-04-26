@@ -102,12 +102,35 @@ const useAlert = () => {
     [Swal, translate]
   )
 
+  /**
+   * Show info message
+   */
+  const info: any = useCallback(
+    async (options: NgxAlertOptions) => {
+      return await Swal.fire({
+        icon: NgxAlertIcon.INFO,
+        title: options?.title ?? (translate('common.alert.successTitle') || String.EMPTY_STRING),
+        text: options.text,
+        allowOutsideClick: false,
+        confirmButtonText: translate('common.alert.btnConfirm') || String.EMPTY_STRING,
+        showCancelButton: false,
+        ...options
+      }).then((result) => {
+        if (result.value) {
+          options && options.onOk && options?.onOk()
+        }
+      })
+    },
+    [Swal, translate]
+  )
+
   return {
     success,
     Swal,
     fail,
     warn,
-    confirm
+    confirm,
+    info
   }
 }
 

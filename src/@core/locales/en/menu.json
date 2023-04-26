@@ -35,10 +35,8 @@
     "alert": {
       "title": "Alert",
       "children": {
-        "warning": "Warning Alert",
-        "success": "Success Alert",
-        "confirm": "Confirm Alert",
-        "error": "Error Alert"
+        "basic": "Basic Alert",
+        "popup": "Alert Popup"
       }
     },
     "exception": {
@@ -64,6 +62,13 @@
           "notfound": "Not Found",
           "forbidden": "Forbidden",
           "serverError": "Internal server error"
+        }
+      },
+      "alert": {
+        "title": "Alert",
+        "children": {
+          "basic": "Basic Alert",
+          "popup": "Popup Alert"
         }
       }
     },

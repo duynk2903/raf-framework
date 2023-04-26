@@ -7,6 +7,7 @@ import Login from '@pages/login/login.component'
 import { Navigate } from 'react-router-dom'
 import { errorRouterModule } from '@pages/error/error.router'
 import { dashboardRouterModule } from '@pages/dashboard/dashboard.router'
+import { alertRouterModule } from '@pages/alerts/alert.router'
 
 /**
  * Router application configuration
@@ -30,7 +31,8 @@ const routerConfigs = (): RouterModel[] => [
         element: <Navigate to={`${DashboardRouterLink.BASE_PATH}/${DashboardRouterLink.ANALYTIC}`} replace />
       },
       ...dashboardRouterModule,
-      ...errorRouterModule
+      ...errorRouterModule,
+      ...alertRouterModule
     ]
   },
   {

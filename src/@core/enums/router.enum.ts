@@ -17,6 +17,12 @@ export enum ErrorRouterLink {
   DEFAULT_PAGE = '/errors/notfound'
 }
 
+export enum AlertRouterLink {
+  BASE_PATH = 'alert',
+  BASIC = 'basic',
+  POPUP = 'popup'
+}
+
 export enum AuthRouterLink {
   BASE_PATH = 'auth',
   LOGIN = 'login'
