@@ -11,7 +11,6 @@ const financeConfig = {
     position: 'top'
   },
   smooth: true,
-  // @TODO 后续会换一种动画方式
   animation: {
     appear: {
       animation: 'path-in',
