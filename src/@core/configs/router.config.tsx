@@ -22,7 +22,7 @@ const routerConfigs = (): RouterModel[] => [
       </RouterGuard>
     ),
     handle: {
-      title: 'menu.breadcrumb.dashboard'
+      title: 'menu.breadcrumb.dashboard.title'
     },
     path: RouterLink.BASE_PATH,
     children: [

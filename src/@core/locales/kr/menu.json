@@ -55,7 +55,12 @@
       }
     },
     "breadcrumb": {
-      "dashboard": "계기반",
+      "dashboard": {
+        "title": "계기반",
+        "children": {
+          "analytics": "해석학"
+        }
+      },
       "error": {
         "title": "오류",
         "children": {

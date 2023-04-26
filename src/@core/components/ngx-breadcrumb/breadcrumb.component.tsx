@@ -2,6 +2,7 @@ import React, { FC } from 'react'
 import { Breadcrumb, Typography } from 'antd'
 import { useBreadCrumb } from '@core/components/ngx-breadcrumb/breadcrumb.hook'
 import { Link } from 'react-router-dom'
+import { HomeOutlined } from '@ant-design/icons'
 
 /**
  * Common ngx breadcrumb component
@@ -11,7 +12,17 @@ const NgxBreadCrumb: FC = () => {
   const { activeItem, translate, getListCrumbItems } = useBreadCrumb()
   const listItems =
     getListCrumbItems &&
-    getListCrumbItems().map(({ path, title }: any) => {
+    getListCrumbItems().map(({ path, title }: any, index) => {
+      if (index === 0) {
+        return {
+          key: path,
+          title: (
+            <Link to={path}>
+              <HomeOutlined />
+            </Link>
+          )
+        }
+      }
       return {
         key: path,
         title: activeItem?.pathname !== path ? <Link to={path}>{title}</Link> : title

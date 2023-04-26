@@ -3,5 +3,6 @@
 @import 'style';
 @import 'override';
 @import 'variable';
+@import "~@ant-design/flowchart/dist/index.css";
 @tailwind components;
 @tailwind utilities;
