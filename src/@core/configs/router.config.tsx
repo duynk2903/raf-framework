@@ -49,7 +49,7 @@ const routerConfigs = (): RouterModel[] => [
   },
   {
     path: ErrorRouterLink.MATCH_PATH,
-    element: <Navigate to={ErrorRouterLink.DEFAULT_PAGE} />
+    element: <Navigate to={ErrorRouterLink.DEFAULT_PAGE} replace />
   }
 ]
 

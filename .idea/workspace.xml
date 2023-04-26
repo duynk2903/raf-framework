@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: fix i18n and change folder locales">
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: add lazy load router">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-navigator/navigator.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-navigator/navigator.type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@core/configs/router.config.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/router.config.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/enums/router.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/enums/router.enum.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/dashboard.module.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/dashboard.module.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@pages/error/error.module.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/error/error.module.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +77,8 @@
       <workItem from="1682343510306" duration="99000" />
       <workItem from="1682344362932" duration="1189000" />
       <workItem from="1682345561978" duration="2670000" />
-      <workItem from="1682467837606" duration="14373000" />
+      <workItem from="1682467837606" duration="14419000" />
+      <workItem from="1682486905969" duration="577000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
@@ -125,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682482838388</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Tommy: add lazy load router">
+      <created>1682486876275</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682486876275</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +142,8 @@
     <MESSAGE value="Tommy: fix responsive main layout" />
     <MESSAGE value="Tommy: fix header style.scss" />
     <MESSAGE value="Tommy: fix i18n and change folder locales" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: fix i18n and change folder locales" />
+    <MESSAGE value="Tommy: add lazy load router" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: add lazy load router" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
