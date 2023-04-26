@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: fix header style.scss">
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: fix i18n and change folder locales">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/en/auth.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/en/auth.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/en/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/en/common.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/en/error.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/en/error.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/en/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/en/menu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/en/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/en/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/kr/auth.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/kr/auth.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/kr/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/kr/common.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/kr/error.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/kr/error.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/kr/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/kr/menu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/kr/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/kr/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-app/app.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-app/app.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/configs/i18n.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/i18n.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-navigator/navigator.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-navigator/navigator.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/configs/router.config.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/router.config.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/enums/router.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/enums/router.enum.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/dashboard.module.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/dashboard.module.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@pages/error/error.module.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/error/error.module.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +81,7 @@
       <workItem from="1682343510306" duration="99000" />
       <workItem from="1682344362932" duration="1189000" />
       <workItem from="1682345561978" duration="2670000" />
-      <workItem from="1682467837606" duration="10348000" />
+      <workItem from="1682467837606" duration="14373000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
@@ -126,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682474621464</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tommy: fix i18n and change folder locales">
+      <created>1682482838388</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682482838388</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +137,8 @@
     <MESSAGE value="Tommy: fix style primary layout" />
     <MESSAGE value="Tommy: fix responsive main layout" />
     <MESSAGE value="Tommy: fix header style.scss" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: fix header style.scss" />
+    <MESSAGE value="Tommy: fix i18n and change folder locales" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: fix i18n and change folder locales" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

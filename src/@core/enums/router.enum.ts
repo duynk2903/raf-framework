@@ -10,11 +10,11 @@ export enum DashboardRouterLink {
 
 export enum ErrorRouterLink {
   MATCH_PATH = '*',
-  DEFAULT = '',
   BASE_PATH = 'errors',
-  NOT_FOUND = '404',
-  FORBIDDEN = '403',
-  INTERNAL_SERVER_ERROR = '500'
+  NOT_FOUND = 'notfound',
+  FORBIDDEN = 'forbidden',
+  INTERNAL_SERVER_ERROR = 'server-error',
+  DEFAULT_PAGE = '/errors/notfound'
 }
 
 export enum AuthRouterLink {
