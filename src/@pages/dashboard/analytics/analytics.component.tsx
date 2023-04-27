@@ -5,6 +5,7 @@ import mockModule from '@core/data/mock'
 import { useDashboardAnalytics } from '@pages/dashboard/analytics/analytics.hook'
 import { AntDesignOutlined, DeleteOutlined, MailOutlined, PropertySafetyFilled, UserOutlined } from '@ant-design/icons'
 import { Line, Radar } from '@ant-design/plots'
+import NgxAnimation from '@core/components/ngx-animation/animation.component'
 
 interface DataType {
   key: string
@@ -73,7 +74,7 @@ const DashboardAnalytic: FC = () => {
   const config: any = { data, ...mockModule.dashboard.financeChart }
   const radarChartConfig: any = { data: listDataRadar, ...mockModule.dashboard.radarChartConfig }
   return (
-    <div className="w-100" data-aos="fade-left" data-aos-delay={300}>
+    <NgxAnimation type="fade-left" delay={300}>
       <Row gutter={[16, 16]}>
         <Col span={12} className="mt-3">
           <Typography.Title level={5}>List users</Typography.Title>
@@ -128,7 +129,7 @@ const DashboardAnalytic: FC = () => {
           </Avatar.Group>
         </Col>
       </Row>
-    </div>
+    </NgxAnimation>
   )
 }
 
