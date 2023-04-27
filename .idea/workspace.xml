@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: add devtools ui">
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-theme-setting/setting.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-theme-setting/setting.component.tsx" afterDir="false" />
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: remove unused icon in setting layout">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/configs/env.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/env.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/models/env.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/models/env.model.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +89,7 @@
       <workItem from="1682467837606" duration="14419000" />
       <workItem from="1682486905969" duration="4527000" />
       <workItem from="1682554070421" duration="753000" />
-      <workItem from="1682554885515" duration="20129000" />
+      <workItem from="1682554885515" duration="21097000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
@@ -196,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682584292248</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Tommy: remove unused icon in setting layout">
+      <created>1682584325766</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1682584325766</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +233,8 @@
     <MESSAGE value="Tommy: add common ngx-table" />
     <MESSAGE value="Tommy: move interface from analytic component to file type.ts" />
     <MESSAGE value="Tommy: add devtools ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: add devtools ui" />
+    <MESSAGE value="Tommy: remove unused icon in setting layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: remove unused icon in setting layout" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
