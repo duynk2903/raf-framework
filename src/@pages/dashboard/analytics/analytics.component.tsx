@@ -1,13 +1,14 @@
 import React, { FC } from 'react'
-import { Avatar, Card, Col, Progress, QRCode, Row, Space, Spin, Table, Tag, Tooltip, Typography } from 'antd'
+import { Avatar, Card, Col, Progress, QRCode, Row, Space, Spin, Tag, Tooltip, Typography } from 'antd'
 import { ColumnsType } from 'antd/es/table'
 import mockModule from '@core/data/mock'
 import { useDashboardAnalytics } from '@pages/dashboard/analytics/analytics.hook'
 import { AntDesignOutlined, DeleteOutlined, MailOutlined, PropertySafetyFilled, UserOutlined } from '@ant-design/icons'
 import { Line, Radar } from '@ant-design/plots'
 import NgxAnimation from '@core/components/ngx-animation/animation.component'
+import NgxTable from '@core/components/ngx-table/table.component'
 
-interface DataType {
+interface UserModel {
   key: string
   name: string
   age: number
@@ -15,7 +16,7 @@ interface DataType {
   tags: string[]
 }
 
-const columns: ColumnsType<DataType> = [
+const columns: ColumnsType<UserModel> = [
   {
     title: 'Name',
     dataIndex: 'name',
@@ -78,9 +79,9 @@ const DashboardAnalytic: FC = () => {
       <Row gutter={[16, 16]}>
         <Col span={12} className="mt-3">
           <Typography.Title level={5}>List users</Typography.Title>
-          <Table
+          <NgxTable<UserModel>
             bordered
-            dataSource={mockModule.dashboard.listUsers}
+            data={mockModule.dashboard.listUsers}
             columns={columns}
             style={{ height: 350 }}
             pagination={false}
