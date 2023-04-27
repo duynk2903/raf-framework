@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Avatar, Card, Col, Progress, QRCode, Row, Space, Spin, Tag, Tooltip, Typography } from 'antd'
+import { Avatar, Card, Col, Progress, Row, Space, Spin, Tag, Tooltip, Typography } from 'antd'
 import { ColumnsType } from 'antd/es/table'
 import mockModule from '@core/data/mock'
 import { useDashboardAnalytics } from '@pages/dashboard/analytics/analytics.hook'
@@ -98,11 +98,6 @@ const DashboardAnalytic: FC = () => {
             <Progress percent={70} status="exception" />
             <Progress percent={100} />
             <Progress percent={50} showInfo={false} />
-            <QRCode
-              value="https://ant.design/"
-              size={50}
-              style={{ marginBottom: 16, position: 'absolute', bottom: 60, right: 5 }}
-            />
           </Space>
           <Typography.Title level={5}>Spinner</Typography.Title>
           <Space size="middle">

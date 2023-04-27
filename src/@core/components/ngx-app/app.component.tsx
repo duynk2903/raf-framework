@@ -13,6 +13,7 @@ import i18n from '@core/configs/i18n.config'
 import '@core/configs/interceptor.config'
 import '@theme/styles/theme.scss'
 import { I18nextProvider } from 'react-i18next'
+import NgxDevtools from '@core/components/ngx-devtools/devtools.component'
 
 /**
  * NgxApplication component
@@ -29,6 +30,7 @@ const NgxApplication: FC = () => {
               <NgxPreloader />
               <NgxNavigator />
               <ReactQueryDevtools initialIsOpen={false} />
+              <NgxDevtools />
               <NgxThemeSettings />
             </I18nextProvider>
           </QueryClientProvider>

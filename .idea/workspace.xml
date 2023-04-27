@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: add common ngx-table">
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: move interface from analytic component to file type.ts">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-animation/animation.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-animation/animation.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-animation/animation.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-animation/animation.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-app/app.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-app/app.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-theme-setting/setting.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-theme-setting/setting.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-theme-setting/setting.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-theme-setting/setting.style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.component.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +90,7 @@
       <workItem from="1682467837606" duration="14419000" />
       <workItem from="1682486905969" duration="4527000" />
       <workItem from="1682554070421" duration="753000" />
-      <workItem from="1682554885515" duration="4796000" />
+      <workItem from="1682554885515" duration="20092000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
@@ -182,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682559482587</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Tommy: move interface from analytic component to file type.ts">
+      <created>1682559760842</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1682559760842</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +218,8 @@
     <MESSAGE value="Tommy: add common ngx-animation" />
     <MESSAGE value="Tommy: remove unused React import in animation.type.ts" />
     <MESSAGE value="Tommy: add common ngx-table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: add common ngx-table" />
+    <MESSAGE value="Tommy: move interface from analytic component to file type.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: move interface from analytic component to file type.ts" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

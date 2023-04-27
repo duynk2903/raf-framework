@@ -1,0 +1,51 @@
+@import '@theme/styles/variable';
+
+.ngx-chat-box {
+  position: absolute;
+  bottom: 0;
+  left: 5rem;
+  min-height: 31.25rem;
+  width: 31.25rem;
+
+  .chat-box-container {
+    height: 100%;
+
+    .ant-card-head {
+      background-color: #334588;
+    }
+
+    .ant-card-body {
+      padding: 0;
+
+      .chat-response-container {
+        padding: 1rem;
+        height: 100%;
+        max-height: 500px;
+        overflow-y: auto;
+
+      }
+
+      .message-container {
+        width: 100%;
+        .chat-box-form {
+
+          .ant-form-item {
+            margin-bottom: 0 !important;
+            textarea {
+              min-height: 5rem !important;
+            }
+          }
+
+          .send-btn {
+            position: absolute;
+            z-index: 333;
+            top: 35%;
+            right: 15px;
+            background: none !important;
+          }
+        }
+      }
+
+    }
+  }
+}

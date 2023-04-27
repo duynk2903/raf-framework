@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
-import { Button, Col, Divider, Drawer, Row, Switch, Tooltip, Typography } from 'antd'
-import { RedoOutlined, SettingOutlined } from '@ant-design/icons'
+import { Button, Col, Divider, Drawer, FloatButton, Row, Switch, Tooltip, Typography } from 'antd'
+import { LayoutOutlined, RedoOutlined, SettingOutlined } from '@ant-design/icons'
 import './setting.style.scss'
 import { useThemeSettings } from '@core/components/ngx-theme-setting/setting.hook'
 import { ThemeStyle } from '@core/enums/theme.enum'
@@ -46,17 +46,13 @@ const NgxThemeSettings: FC = () => {
   )
   return (
     <>
-      <div className="ngx-theme-setting">
-        <Tooltip title={translate('settings.theme.settingThemeTooltip')}>
-          <Button
-            type="primary"
-            onClick={handleOpenThemeSetting}
-            size="large"
-            shape="circle"
-            icon={<SettingOutlined spin />}
-          />
-        </Tooltip>
-      </div>
+      <FloatButton
+        icon={<LayoutOutlined />}
+        className="ngx-theme-setting"
+        tooltip={translate('settings.theme.settingThemeTooltip')}
+        onClick={handleOpenThemeSetting}
+        shape="circle"
+      />
       <Drawer
         title={translate('settings.theme.title')}
         placement="right"

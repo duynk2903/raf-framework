@@ -5,6 +5,7 @@ export interface NgxAnimationProps {
   duration?: number
   offset?: number
   delay?: number
+  className?: string
   children: ReactNode
 }
 
