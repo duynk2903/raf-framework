@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { Button, Col, Divider, Drawer, FloatButton, Row, Switch, Tooltip, Typography } from 'antd'
-import { LayoutOutlined, RedoOutlined, SettingOutlined } from '@ant-design/icons'
+import { LayoutOutlined, RedoOutlined } from '@ant-design/icons'
 import './setting.style.scss'
 import { useThemeSettings } from '@core/components/ngx-theme-setting/setting.hook'
 import { ThemeStyle } from '@core/enums/theme.enum'
