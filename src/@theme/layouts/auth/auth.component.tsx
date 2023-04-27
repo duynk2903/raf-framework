@@ -5,6 +5,7 @@ import { useAuthLayout } from '@theme/layouts/auth/auth.hook'
 import { Outlet } from 'react-router-dom'
 import NgxIcon from '@core/components/ngx-icon/icon.component'
 import { CodeSandboxOutlined } from '@ant-design/icons'
+import NgxAnimation from '@core/components/ngx-animation/animation.component'
 
 /**
  * Auth layout component
@@ -16,7 +17,7 @@ const AuthLayout: FC = () => {
     <Layout className="ngx-auth-layout">
       <Layout.Content>
         <Row className="ngx-auth-container h-full m-auto" justify="center" align={'middle'}>
-          <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" className="w-full">
+          <NgxAnimation delay={800} type="fade-up" duration={1000}>
             <Col span={12} offset={6}>
               <Row className="auth-body" gutter={[16, 32]}>
                 <Col span={13} className="auth-left-container pt-12">
@@ -58,7 +59,7 @@ const AuthLayout: FC = () => {
                 </Col>
               </Row>
             </Col>
-          </div>
+          </NgxAnimation>
         </Row>
       </Layout.Content>
     </Layout>
