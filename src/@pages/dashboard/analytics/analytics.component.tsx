@@ -7,14 +7,7 @@ import { AntDesignOutlined, DeleteOutlined, MailOutlined, PropertySafetyFilled, 
 import { Line, Radar } from '@ant-design/plots'
 import NgxAnimation from '@core/components/ngx-animation/animation.component'
 import NgxTable from '@core/components/ngx-table/table.component'
-
-interface UserModel {
-  key: string
-  name: string
-  age: number
-  address: string
-  tags: string[]
-}
+import { UserModel } from '@pages/dashboard/analytics/analytic.type'
 
 const columns: ColumnsType<UserModel> = [
   {
