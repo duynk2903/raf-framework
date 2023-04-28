@@ -15,10 +15,11 @@ const useDevTools = () => {
     }
   })
   const handleOpenDevTools = useCallback((isOpen: boolean) => {
-    setDevToolsState({
-      ...devToolsState,
-      isOpen
-    })
+    setDevToolsState(
+      produce(devToolsState, (draft) => {
+        draft.isOpen = isOpen
+      })
+    )
   }, [])
 
   /**

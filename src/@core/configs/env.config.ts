@@ -9,7 +9,7 @@ const applicationEnvironmentVariable = (): EnvModel => {
     .backendUrl(process.env.REACT_APP_BACKEND_URL)
     .appVersion(process.env.REACT_APP_VERSION)
     .basePath(process.env.REACT_APP_BASE_PATH)
-    .openAIKey(process.env.OPENAI_API_KEY)
+    .openAIKey(process.env.REACT_APP_OPEN_AI_KEY)
     .build()
 }
 
