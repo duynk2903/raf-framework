@@ -5,6 +5,10 @@ import './devtools.style.scss'
 import { useDevTools } from '@core/components/ngx-devtools/devtools.hook'
 import NgxChatBox from '@core/components/ngx-devtools/chat-box/chatbox.component'
 
+/**
+ * Ngx common devtools
+ * @constructor
+ */
 const NgxDevtools: FC = () => {
   const { isOpen, handleOpenDevTools, handleOpenChatBox, itemState } = useDevTools()
   return (
@@ -30,7 +34,9 @@ const NgxDevtools: FC = () => {
           </>
         )}
       </FloatButton.Group>
-      <NgxChatBox isOpen={itemState?.isOpenChatBox} handleClose={() => handleOpenChatBox(false)} />
+      {itemState?.isOpenChatBox && (
+        <NgxChatBox isOpen={itemState?.isOpenChatBox} handleClose={() => handleOpenChatBox(false)} />
+      )}
     </>
   )
 }

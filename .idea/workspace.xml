@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: add open ai base service">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: add ngx-ai in dev tool">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-devtools/chat-box/chatbox.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-devtools/chat-box/chatbox.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-devtools/chat-box/chatbox.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-devtools/chat-box/chatbox.hook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-devtools/chat-box/chatbox.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-devtools/chat-box/chatbox.style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-devtools/chat-box/chatbox.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-devtools/chat-box/chatbox.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-devtools/devtools.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-devtools/devtools.hook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/configs/env.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/env.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/services/open-ai.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/services/open-ai.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-devtools/devtools.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-devtools/devtools.component.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +90,7 @@
       <workItem from="1682486905969" duration="4527000" />
       <workItem from="1682554070421" duration="753000" />
       <workItem from="1682554885515" duration="21405000" />
-      <workItem from="1682640599697" duration="17076000" />
+      <workItem from="1682640599697" duration="19229000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
@@ -226,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682585576319</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Tommy: add ngx-ai in dev tool">
+      <created>1682662019693</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1682662019693</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +250,8 @@
     <MESSAGE value="Tommy: add devtools ui" />
     <MESSAGE value="Tommy: remove unused icon in setting layout" />
     <MESSAGE value="Tommy: add open ai base service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: add open ai base service" />
+    <MESSAGE value="Tommy: add ngx-ai in dev tool" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: add ngx-ai in dev tool" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

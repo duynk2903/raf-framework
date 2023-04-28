@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react'
+import React, { FC, memo, useEffect, useState } from 'react'
 import { Button, Col, Form, Input, Row } from 'antd'
 import './chatbox.style.scss'
 import { CameraFilled, CloseOutlined, SendOutlined, SmileOutlined } from '@ant-design/icons'
@@ -13,7 +13,7 @@ import NgxAnimation from '@core/components/ngx-animation/animation.component'
  * @param isAIGenerator
  * @constructor
  */
-function TextGenerator({ message, delay, isAIGenerator }: any) {
+const TextGenerator: FC<any> = memo(({ message, delay, isAIGenerator }: any) => {
   const [text, setText] = useState('')
 
   useEffect(() => {
@@ -36,7 +36,7 @@ function TextGenerator({ message, delay, isAIGenerator }: any) {
   }, [message, delay])
 
   return <>{isAIGenerator ? <div className="message ai">{text}</div> : <div className="message user">{message}</div>}</>
-}
+})
 
 /**
  * Ngx chat box component
@@ -50,7 +50,7 @@ const NgxChatBox: FC<ChatBoxProps> = ({ isOpen = false, handleClose }) => {
     <>
       {isOpen && (
         <Row className="ngx-chat-box">
-          <NgxAnimation type="fade-up" delay={300} className="h-full">
+          <NgxAnimation type="fade-right" delay={300} className="h-full">
             {contextHolder}
             <Col span={24}>
               <div className="chat">
