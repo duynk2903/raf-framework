@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: add common form builder">
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: add form builder and pages basic form, advance form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-loader/loader.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-loader/loader.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/configs/menu.config.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/menu.config.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/configs/router.config.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/router.config.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/enums/router.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/enums/router.enum.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/locales/en/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/en/menu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/locales/kr/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/kr/menu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +90,7 @@
       <workItem from="1682554070421" duration="753000" />
       <workItem from="1682554885515" duration="21405000" />
       <workItem from="1682640599697" duration="19229000" />
-      <workItem from="1683000683227" duration="5880000" />
+      <workItem from="1683000683227" duration="9726000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
@@ -237,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682994920363</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Tommy: add form builder and pages basic form, advance form">
+      <created>1683007763371</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1683007763371</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +266,8 @@
     <MESSAGE value="Tommy: add open ai base service" />
     <MESSAGE value="Tommy: add ngx-ai in dev tool" />
     <MESSAGE value="Tommy: add common form builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: add common form builder" />
+    <MESSAGE value="Tommy: add form builder and pages basic form, advance form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: add form builder and pages basic form, advance form" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
