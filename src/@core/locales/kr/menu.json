@@ -12,7 +12,6 @@
       "title": "형태",
       "children": {
         "basic": "기본형",
-        "step": "단계 양식",
         "advanced": "고급 양식"
       }
     },
@@ -74,6 +73,13 @@
         "children": {
           "basic": "기본 알림",
           "popup": "팝업 알림"
+        }
+      },
+      "form": {
+        "title": "형태",
+        "children": {
+          "basic": "기본형",
+          "advance": "고급 양식"
         }
       }
     },

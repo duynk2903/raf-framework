@@ -15,7 +15,7 @@ import { TFunction } from 'i18next'
 import { TranslateLanguageEnum } from '@core/enums/translate.enum'
 import { changeLanguage, getCurrentLanguage } from '@core/helpers/i18n.helper'
 import { MenuModel } from '@core/models/menu.model'
-import { AlertRouterLink, DashboardRouterLink, ErrorRouterLink } from '@core/enums/router.enum'
+import { AlertRouterLink, DashboardRouterLink, ErrorRouterLink, FormRouterLink } from '@core/enums/router.enum'
 import _ from 'lodash'
 
 /**
@@ -44,20 +44,16 @@ const menusConfig = (translate: TFunction): MenuModel[] => [
   },
   {
     label: translate('menu.form.title'),
-    key: 'form',
+    key: FormRouterLink.BASE_PATH,
     icon: <FormOutlined />,
     children: [
       {
         label: translate('menu.form.children.basic'),
-        key: _.uniqueId()
-      },
-      {
-        label: translate('menu.form.children.step'),
-        key: _.uniqueId()
+        key: FormRouterLink.BASIC
       },
       {
         label: translate('menu.form.children.advanced'),
-        key: _.uniqueId()
+        key: FormRouterLink.ADVANCED
       }
     ]
   },

@@ -23,6 +23,12 @@ export enum AlertRouterLink {
   POPUP = 'popup'
 }
 
+export enum FormRouterLink {
+  BASE_PATH = 'form',
+  BASIC = 'basic-template',
+  ADVANCED = 'advanced-template'
+}
+
 export enum AuthRouterLink {
   BASE_PATH = 'auth',
   LOGIN = 'login'

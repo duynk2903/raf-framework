@@ -12,7 +12,6 @@
       "title": "Form",
       "children": {
         "basic": "Basic Form",
-        "step": "Step Form",
         "advanced": "Advanced Form"
       }
     },
@@ -74,6 +73,13 @@
         "children": {
           "basic": "Basic Alert",
           "popup": "Popup Alert"
+        }
+      },
+      "form": {
+        "title": "Form",
+        "children": {
+          "basic": "Basic form",
+          "advance": "Advanced form"
         }
       }
     },

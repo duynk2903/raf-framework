@@ -8,6 +8,7 @@ import { Navigate } from 'react-router-dom'
 import { errorRouterModule } from '@pages/error/error.router'
 import { dashboardRouterModule } from '@pages/dashboard/dashboard.router'
 import { alertRouterModule } from '@pages/alerts/alert.router'
+import { formRouterModule } from '@pages/form/form.router'
 
 /**
  * Router application configuration
@@ -32,7 +33,8 @@ const routerConfigs = (): RouterModel[] => [
       },
       ...dashboardRouterModule,
       ...errorRouterModule,
-      ...alertRouterModule
+      ...alertRouterModule,
+      ...formRouterModule
     ]
   },
   {

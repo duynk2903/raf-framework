@@ -11,7 +11,7 @@ import { NgxLoaderProps } from '@core/components/ngx-loader/loader.type'
  */
 const NgxLoader: FC<NgxLoaderProps> = ({ isLoading = false, children }) => {
   return (
-    <Spin spinning={isLoading} className="ngx-spinner">
+    <Spin spinning={isLoading} className="ngx-spinner" size="large">
       {children}
     </Spin>
   )
