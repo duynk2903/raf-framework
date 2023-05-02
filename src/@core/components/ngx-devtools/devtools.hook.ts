@@ -36,9 +36,24 @@ const useDevTools = () => {
     )
   }, [])
 
+  /**
+   * Handle open form builder
+   */
+  const handleOpenFormBuilder = useCallback((isOpen: boolean) => {
+    setDevToolsState(
+      produce(devToolsState, (draft) => {
+        draft.itemState = {
+          ...devToolsState.itemState,
+          isOpenFormBuilder: isOpen
+        }
+      })
+    )
+  }, [])
+
   return {
     handleOpenDevTools,
     handleOpenChatBox,
+    handleOpenFormBuilder,
     ...devToolsState
   }
 }
