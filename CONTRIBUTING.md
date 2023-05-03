@@ -23,7 +23,7 @@ Folder Structure Conventions
             ├── enums            # Folder define all enum use in application
             ├── helpers          # Folder have all file helper use in application
             ├── models           # Folder have all file model use in application
-            ├── localels             # Multiple language
+            ├── localels         # Multiple language
             ├── services         # Folder have all file service
             ├── utils            # Folder have all utility 
         ├── @pages

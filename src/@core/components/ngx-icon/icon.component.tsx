@@ -1,5 +1,6 @@
 import { ImagesIconProps } from '@core/components/ngx-icon/icon.type'
 import { FC } from 'react'
+import { applicationEnvironmentVariable } from '@core/configs/env.config'
 
 /**
  * Images icon component
@@ -9,7 +10,8 @@ import { FC } from 'react'
  * @constructor
  */
 const NgxIcon: FC<ImagesIconProps> = ({ name, className, onClick }) => {
-  return <img src={`${process.env.PUBLIC_URL}${name}`} className={className} alt="" onClick={onClick} />
+  const { publicUrl } = applicationEnvironmentVariable()
+  return <img src={`${publicUrl}${name}`} className={className} alt="" onClick={onClick} />
 }
 
 export default NgxIcon

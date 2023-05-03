@@ -10,14 +10,14 @@ import { Builder } from '@core/helpers/builder.helper'
 import { TranslateLanguageEnum } from '@core/enums/translate.enum'
 import { listLocales } from '@core/configs/i18n.config'
 import { useTranslation } from 'react-i18next'
-import { ActiveEnvironmentProfile } from '@core/enums/env.enum'
+import { applicationEnvironmentVariable } from '@core/configs/env.config'
 
 /**
  * Use application hook
  */
 const useApplication = () => {
   const { i18n } = useTranslation()
-  const isDevelopment = process.env.NODE_ENV === ActiveEnvironmentProfile.DEVELOPMENT
+  const { isDevelopment } = applicationEnvironmentVariable()
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
