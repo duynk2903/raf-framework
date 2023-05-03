@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: add form builder and pages basic form, advance form">
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: update README.md">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +92,8 @@
       <workItem from="1682554070421" duration="753000" />
       <workItem from="1682554885515" duration="21405000" />
       <workItem from="1682640599697" duration="19229000" />
-      <workItem from="1683000683227" duration="9726000" />
+      <workItem from="1683000683227" duration="11983000" />
+      <workItem from="1683073711703" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
@@ -239,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683007763371</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Tommy: update README.md">
+      <created>1683011591215</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1683011591215</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +277,8 @@
     <MESSAGE value="Tommy: add ngx-ai in dev tool" />
     <MESSAGE value="Tommy: add common form builder" />
     <MESSAGE value="Tommy: add form builder and pages basic form, advance form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: add form builder and pages basic form, advance form" />
+    <MESSAGE value="Tommy: update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: update README.md" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
