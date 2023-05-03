@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: update README.md">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: remove open ai key by security">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-app/app.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-app/app.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-app/app.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-app/app.hook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-devtools/devtools.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-devtools/devtools.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-devtools/devtools.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-devtools/devtools.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/styles/override.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/styles/override.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/styles/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/styles/variable.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,26 +32,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/220720-0002/Desktop/study/react-ant-framework/src/@core/helpers&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/duynk9/Desktop/CMC/react-ant-framework/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\220720-0002\\Desktop\\study\\react-ant-framework\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/220720-0002/Desktop/study/raf-framework",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/duynk9/Desktop/CMC/react-ant-framework/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "C:\\Users\\220720-0002\\Desktop\\study\\raf-framework\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\220720-0002\Desktop\study\react-ant-framework\src\@core\helpers" />
@@ -93,7 +96,8 @@
       <workItem from="1682554885515" duration="21405000" />
       <workItem from="1682640599697" duration="19229000" />
       <workItem from="1683000683227" duration="11983000" />
-      <workItem from="1683073711703" duration="34000" />
+      <workItem from="1683073711703" duration="1017000" />
+      <workItem from="1683074913069" duration="1975000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
@@ -249,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683011591215</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Tommy: remove open ai key by security">
+      <created>1683073772435</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1683073772435</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +289,8 @@
     <MESSAGE value="Tommy: add common form builder" />
     <MESSAGE value="Tommy: add form builder and pages basic form, advance form" />
     <MESSAGE value="Tommy: update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: update README.md" />
+    <MESSAGE value="Tommy: remove open ai key by security" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: remove open ai key by security" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

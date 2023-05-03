@@ -8,3 +8,7 @@ export interface DevToolsItemState {
   isOpenSkeletonBuilder: boolean
   isOpenFormBuilder: boolean
 }
+
+export interface NgxDevToolsProps {
+  isOpenDevTools: boolean
+}

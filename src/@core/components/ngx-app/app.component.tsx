@@ -20,7 +20,7 @@ import NgxDevtools from '@core/components/ngx-devtools/devtools.component'
  * @constructor
  */
 const NgxApplication: FC = () => {
-  const { queryClient, themeSettings, localization } = useApplication()
+  const { queryClient, themeSettings, localization, isDevelopment } = useApplication()
   return (
     <StyleProvider transformers={[legacyLogicalPropertiesTransformer]} hashPriority={'high'}>
       <ConfigProvider theme={themeConfig(themeSettings)} locale={localization?.localTranslate}>
@@ -30,7 +30,7 @@ const NgxApplication: FC = () => {
               <NgxPreloader />
               <NgxNavigator />
               <ReactQueryDevtools initialIsOpen={false} />
-              <NgxDevtools />
+              <NgxDevtools isOpenDevTools={isDevelopment} />
               <NgxThemeSettings />
             </I18nextProvider>
           </QueryClientProvider>

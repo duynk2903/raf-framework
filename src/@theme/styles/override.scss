@@ -20,10 +20,10 @@ input {
   input, textarea, select {
     &:-webkit-autofill {
       &, &:hover, &:focus {
-        -webkit-text-fill-color: #ffffff;
-        -webkit-box-shadow: 0 0 0 1000px #141414 inset;
-        box-shadow: 0 0 0 1000px #141414 inset;
-        transition: background-color 5000s ease-in-out 0s;
+        -webkit-text-fill-color: map-get($theme, --auto-fill-text-color-dark);
+        -webkit-box-shadow: map-get($theme, --auto-fill-webkit-box-shadow-dark);
+        box-shadow: map-get($theme, --auto-fill-webkit-box-shadow-dark);
+        transition: map-get($theme, --auto-fill-transition);
       }
     }
   }
@@ -50,10 +50,10 @@ input {
   input, textarea, select {
     &:-webkit-autofill {
       &, &:hover, &:focus {
-        -webkit-text-fill-color: rgba(0, 0, 0, 0.88);
-        -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
-        box-shadow: 0 0 0 1000px #ffffff inset;
-        transition: background-color 5000s ease-in-out 0s;
+        -webkit-text-fill-color: map-get($theme, --auto-fill-text-color-light);
+        -webkit-box-shadow: map-get($theme, --auto-fill-webkit-box-shadow-light);
+        box-shadow: map-get($theme, --auto-fill-webkit-box-shadow-light);
+        transition: map-get($theme, --auto-fill-transition);
       }
     }
   }

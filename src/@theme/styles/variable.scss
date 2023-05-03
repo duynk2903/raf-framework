@@ -19,5 +19,10 @@ $theme: (
         --scrollbar-background-thumb: #4e5151,
         --scrollbar-thumb-border-radius: 0.15625rem,
         --scrollbar-corner-background-light: #f7f9fc,
-        --scrollbar-thumb-background-light: #e4e9f2
+        --scrollbar-thumb-background-light: #e4e9f2,
+        --auto-fill-text-color-dark: #ffffff,
+        --auto-fill-webkit-box-shadow-dark: 0 0 0 1000px #141414 inset,
+        --auto-fill-transition: background-color 5000s ease-in-out 0s,
+        --auto-fill-text-color-light:  rgba(0, 0, 0, 0.88),
+        --auto-fill-webkit-box-shadow-light: 0 0 0 1000px #ffffff inset
 )
