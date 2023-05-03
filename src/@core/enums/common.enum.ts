@@ -1,5 +1,6 @@
 export enum String {
-  EMPTY_STRING = ''
+  EMPTY_STRING = '',
+  BASE_PATH = '/'
 }
 
 const GENERIC_VALUE_TYPE: any = null

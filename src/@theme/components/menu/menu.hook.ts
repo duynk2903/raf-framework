@@ -9,6 +9,10 @@ import { flatMenus } from '@core/helpers/menu.helper'
 import { MenuModel } from '@core/models/menu.model'
 import _ from 'lodash'
 import { menusConfig } from '@core/configs/menu.config'
+import { routerConfigs } from '@core/configs/router.config'
+import { RouterModel } from '@core/components/ngx-navigator/navigator.type'
+import { ErrorRouterLink } from '@core/enums/router.enum'
+import { String } from '@core/enums/common.enum'
 
 /**
  * Common menu hook
@@ -20,13 +24,32 @@ const useMenu = () => {
   const navigate = useNavigate()
   const { pathname } = useLocation()
 
+  function flatRouter(listRouter: RouterModel[]): RouterModel[] | any[] {
+    return _.flatMap(listRouter, (router) => {
+      if (router.children && router.children.length > 0) {
+        return flatRouter(router?.children).map((el) => ({
+          ...el,
+          path: `${router.path === String.BASE_PATH ? String.EMPTY_STRING : router.path}${String.BASE_PATH}${el.path}`
+        }))
+      } else {
+        return router
+      }
+    })
+  }
+
   /**
    * Handle click menu and start navigation
    */
   const handleSelectedMenuAndStartNavigate = useCallback(
     ({ keyPath: segments }: { keyPath: string[] }) => {
-      const routerPath = `/${segments.reverse().join('/')}`
-      navigate(routerPath)
+      const routerPath = `${String.BASE_PATH}${segments.reverse().join(String.BASE_PATH)}`
+      const listRouterFlat = flatRouter(routerConfigs())
+      const matchRouter = listRouterFlat.find((el: RouterModel) => el.path === routerPath)
+      if (matchRouter) {
+        navigate(matchRouter?.path)
+      } else {
+        navigate(`/${ErrorRouterLink.BASE_PATH}/${ErrorRouterLink.NOT_FOUND}`)
+      }
     },
     [navigate]
   )
