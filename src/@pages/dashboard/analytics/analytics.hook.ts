@@ -1,11 +1,18 @@
 import { useEffect, useState } from 'react'
+import { useRecoilValue } from 'recoil'
+import { themeSettingsState } from '@core/components/ngx-theme-setting/setting.recoil'
 
 const useDashboardAnalytics = () => {
   const [data, setData] = useState([])
   const [listDataRadar, setDataRadar] = useState([])
+  const themeSettings = useRecoilValue(themeSettingsState)
+  const [isLoading, setIsLoading] = useState<boolean>(true)
 
   useEffect(() => {
     asyncFetch()
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 1200)
   }, [])
 
   const asyncFetch = () => {
@@ -23,7 +30,7 @@ const useDashboardAnalytics = () => {
       })
   }
 
-  return { data, listDataRadar }
+  return { data, listDataRadar, themeSettings, isLoading }
 }
 
 export { useDashboardAnalytics }

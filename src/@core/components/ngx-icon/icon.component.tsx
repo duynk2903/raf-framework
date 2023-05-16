@@ -11,7 +11,7 @@ import { applicationEnvironmentVariable } from '@core/configs/env.config'
  */
 const NgxIcon: FC<ImagesIconProps> = ({ name, className, onClick }) => {
   const { publicUrl } = applicationEnvironmentVariable()
-  return <img src={`${publicUrl}${name}`} className={className} alt="" onClick={onClick} />
+  return <img src={`${publicUrl}${name}`} className={className} alt="" onClick={onClick} loading="lazy" />
 }
 
 export default NgxIcon

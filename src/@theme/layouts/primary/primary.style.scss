@@ -16,9 +16,6 @@
     }
 
     .ngx-primary-card {
-      .ant-card-body:first-child {
-        min-height: calc(100vh - 7rem);
-      }
       .ngx-primary-outlet {
         margin: 0;
       }

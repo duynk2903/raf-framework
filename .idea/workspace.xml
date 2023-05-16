@@ -6,13 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: Fix only open devtools.component.tsx when development">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-app/app.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-app/app.hook.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-icon/icon.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-icon/icon.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/configs/env.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/env.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/configs/i18n.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/i18n.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/models/env.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/models/env.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-table/table.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-table/table.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-table/table.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-table/table.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.hook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

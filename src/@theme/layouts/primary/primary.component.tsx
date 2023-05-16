@@ -34,7 +34,7 @@ const PrimaryLayout: FC = () => {
             }}>
             {isEnabled && <SidebarComponent />}
             <Layout style={{ padding: '24px 24px 24px' }} className={!isEnabled ? 'wide' : ''}>
-              <Card className="ngx-primary-card">
+              <Card className="ngx-primary-card" bodyStyle={{ minHeight: 'calc(100vh - 7rem)' }}>
                 <Row>
                   <Col span={24} style={{ background: colorBgContainer }}>
                     <NgxBreadCrumb />
