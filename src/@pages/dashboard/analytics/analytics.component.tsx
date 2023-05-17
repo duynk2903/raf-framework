@@ -1,10 +1,9 @@
 import React, { FC } from 'react'
-import { Avatar, Badge, Button, Card, Col, Image, Input, Row, Skeleton, Space, Tag, Tooltip, Typography } from 'antd'
+import { Avatar, Button, Card, Col, Image, Input, Row, Skeleton, Space, Tag, Tooltip, Typography } from 'antd'
 import { useDashboardAnalytics } from '@pages/dashboard/analytics/analytics.hook'
 import NgxAnimation from '@core/components/ngx-animation/animation.component'
 import {
   AntDesignOutlined,
-  BellFilled,
   CalendarOutlined,
   CheckCircleOutlined,
   FieldTimeOutlined,
