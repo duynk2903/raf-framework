@@ -74,7 +74,7 @@ const DashboardAnalytic: FC = () => {
             </Col>
 
             <Col span={24}>
-              <Row gutter={[16, 16]}>
+              <Row gutter={[24, 24]}>
                 <Col span={8}>
                   <Card type="inner">
                     <Skeleton loading={isLoading} avatar paragraph={false} active style={{ minHeight: 50 }}>
@@ -130,7 +130,7 @@ const DashboardAnalytic: FC = () => {
             </Col>
 
             <Col span={24}>
-              <Row gutter={[16, 16]}>
+              <Row gutter={[24, 24]}>
                 <Col span={12}>
                   <Card>
                     <Skeleton loading={isLoading} avatar active paragraph={{ rows: 9 }}>
@@ -216,7 +216,7 @@ const DashboardAnalytic: FC = () => {
             </Col>
 
             <Col span={24}>
-              <Row gutter={[16, 16]}>
+              <Row gutter={[24, 24]}>
                 <Col span={12}>
                   <Card style={{ minHeight: 389 }}>
                     <Skeleton loading={isLoading} avatar active paragraph={{ rows: 9 }}>
@@ -319,7 +319,7 @@ const DashboardAnalytic: FC = () => {
 
         <Col span={8}>
           <Card>
-            <Row gutter={[16, 16]}>
+            <Row gutter={[24, 24]}>
               <Col span={24}>
                 <Skeleton loading={isLoading} active avatar paragraph={false}>
                   <Typography.Paragraph className="mb-5">
@@ -398,7 +398,7 @@ const DashboardAnalytic: FC = () => {
                 />
               </Col>
 
-              <Col span={24} className="mt-5">
+              <Col span={24} className="mt-1">
                 <Typography.Paragraph className="mt-5">{translate('dashboard.teamReportTitle')}</Typography.Paragraph>
 
                 <Pie

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: add multiple language dashboard analytic screen">
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: optimize layout effect for menu hook, app animation effect">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-app/app.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-app/app.hook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-preloader/preloader.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-preloader/preloader.hook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/components/menu/menu.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/menu/menu.hook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.component.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +98,7 @@
       <workItem from="1683088341202" duration="682000" />
       <workItem from="1683092077671" duration="56000" />
       <workItem from="1683093178748" duration="4914000" />
-      <workItem from="1684283577954" duration="16140000" />
+      <workItem from="1684283577954" duration="16978000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
@@ -312,14 +310,20 @@
       <option name="project" value="LOCAL" />
       <updated>1684305192042</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Tommy: optimize layout effect for menu hook, app animation effect">
+      <created>1684306338901</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1684306338901</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tommy: fix i18n and change folder locales" />
     <MESSAGE value="Tommy: add lazy load router" />
     <MESSAGE value="Tommy: fix router replace" />
     <MESSAGE value="Tommy: add analytic dashboard" />
@@ -344,7 +348,8 @@
     <MESSAGE value="Tommy: update the hook of menu sidebar" />
     <MESSAGE value="Tommy: Remove unused import in analytics.component.tsx" />
     <MESSAGE value="Tommy: add multiple language dashboard analytic screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: add multiple language dashboard analytic screen" />
+    <MESSAGE value="Tommy: optimize layout effect for menu hook, app animation effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: optimize layout effect for menu hook, app animation effect" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
