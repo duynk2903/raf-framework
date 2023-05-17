@@ -1,12 +1,12 @@
-import { financeConfig } from '@core/data/dashboard/finance'
-import { listUser } from '@core/data/dashboard/user'
-import { radarConfigs } from '@core/data/dashboard/radar'
+import { listBugs } from '@core/data/dashboard/bugs'
+import { rateData } from '@core/data/dashboard/rate'
+import { teamReportData } from '@core/data/dashboard/report'
 
 const mockModule: any = {
   dashboard: {
-    financeChart: financeConfig,
-    listUsers: listUser,
-    radarChartConfig: radarConfigs
+    listBugs: listBugs,
+    rateData: rateData,
+    teamReportData: teamReportData
   }
 }
 
