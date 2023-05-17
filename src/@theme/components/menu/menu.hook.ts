@@ -69,7 +69,7 @@ const useMenu = () => {
       const listMenuFlats = flatMenus(listMenuSidebar)
       const routerActive: MenuModel | any = _.find(
         listMenuFlats,
-        (item) => item && `/${item.parentId}/${item.key}` === pathname
+        (item: any) => (item && `/${item.parentId}/${item.key}` === pathname) || `/${item.key}` === pathname
       )
       if (routerActive) {
         const { parentId, key } = routerActive

@@ -43,7 +43,7 @@ const DashboardAnalytic: FC = () => {
         <Col span={16}>
           <Row gutter={[24, 24]}>
             <Col span={24}>
-              <Row>
+              <Row gutter={[24, 24]}>
                 <Col span={20}>
                   {isLoading ? (
                     <Skeleton.Input active size="large" className="w-full" />
@@ -55,26 +55,13 @@ const DashboardAnalytic: FC = () => {
                   {isLoading ? (
                     <Skeleton.Button size="large" className="w-full pl-5" active />
                   ) : (
-                    <Space size={[12, 12]}>
-                      <Button
-                        type="ghost"
-                        className="text-lg pl-5"
-                        icon={
-                          <Badge dot>
-                            <BellFilled className="text-lg" />
-                          </Badge>
-                        }
-                        size="large"
-                        style={{ color: '#426BFD' }}
-                      />
-                      <Button
-                        type="primary"
-                        className="font-normal ml-4"
-                        size="large"
-                        style={{ backgroundColor: '#436BFF' }}>
-                        Create <PlusOutlined />
-                      </Button>
-                    </Space>
+                    <Button
+                      type="primary"
+                      className="font-normal w-full"
+                      size="large"
+                      style={{ backgroundColor: '#436BFF' }}>
+                      Create <PlusOutlined />
+                    </Button>
                   )}
                 </Col>
               </Row>

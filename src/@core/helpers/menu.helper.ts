@@ -12,8 +12,12 @@ function flatMenus(menuItems: MenuModel[]) {
         ...item,
         ...el,
         children: [],
-        parentId: item.key
+        parentId: item.key ?? ''
       }))
+    } else {
+      return {
+        ...item
+      }
     }
   })
 }
