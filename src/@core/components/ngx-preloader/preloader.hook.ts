@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 
 /**
  * Use loader hooks
@@ -9,7 +9,7 @@ const useLoader = () => {
   /**
    * Initial Effect and set display preloading state is disabled within 1200
    */
-  useEffect(() => {
+  useLayoutEffect(() => {
     setTimeout(() => {
       setDisplay(false)
     }, 1200)

@@ -2,7 +2,7 @@ import { QueryClient } from '@tanstack/react-query'
 import { useRecoilValue } from 'recoil'
 import { themeSettingsState } from '@core/components/ngx-theme-setting/setting.recoil'
 import AOS from 'aos'
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
 import { ThemeStyle } from '@core/enums/theme.enum'
 import { getCurrentLanguage } from '@core/helpers/i18n.helper'
 import { LocalizationDateModel } from '@core/models/localization-date.model'
@@ -41,7 +41,7 @@ const useApplication = () => {
   /**
    * Init animation
    */
-  useEffect(() => {
+  useLayoutEffect(() => {
     AOS.init({
       duration: 1000
     })

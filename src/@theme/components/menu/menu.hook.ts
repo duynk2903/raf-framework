@@ -3,7 +3,7 @@ import { useRecoilState } from 'recoil'
 import { sidebarSelector } from '@core/components/ngx-app/app.recoil'
 import { useTranslation } from 'react-i18next'
 import { TranslateEnum } from '@core/enums/translate.enum'
-import { useCallback, useEffect, useMemo } from 'react'
+import { useCallback, useLayoutEffect, useMemo } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { flatMenus } from '@core/helpers/menu.helper'
 import { MenuModel } from '@core/models/menu.model'
@@ -64,7 +64,7 @@ const useMenu = () => {
   /**
    * Effect check when navigation or change router. The sidebar need re check active routes
    */
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (listMenuSidebar.length > 0) {
       const listMenuFlats = flatMenus(listMenuSidebar)
       const routerActive: MenuModel | any = _.find(
