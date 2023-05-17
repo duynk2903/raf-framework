@@ -17,6 +17,7 @@ import {
 import { ThemeColorStyle } from '@core/enums/theme.enum'
 import { Column, Pie, Stock } from '@ant-design/plots'
 import { ProjectStatus } from '@pages/dashboard/analytics/analytic.type'
+import { String } from '@core/enums/common.enum'
 
 /**
  * Dashboard Component
@@ -34,7 +35,8 @@ const DashboardAnalytic: FC = () => {
     rateData,
     memberInformation,
     listBugs,
-    teamReportData
+    teamReportData,
+    translate
   } = useDashboardAnalytics()
   return (
     <NgxAnimation type="fade-left" delay={300}>
@@ -47,7 +49,12 @@ const DashboardAnalytic: FC = () => {
                   {isLoading ? (
                     <Skeleton.Input active size="large" className="w-full" />
                   ) : (
-                    <Input autoFocus suffix={<SearchOutlined />} placeholder="Search" size="large" />
+                    <Input
+                      autoFocus
+                      suffix={<SearchOutlined />}
+                      placeholder={translate('dashboard.searchPlaceholder') ?? String.EMPTY_STRING}
+                      size="large"
+                    />
                   )}
                 </Col>
                 <Col span={4}>
@@ -59,7 +66,7 @@ const DashboardAnalytic: FC = () => {
                       className="font-normal w-full"
                       size="large"
                       style={{ backgroundColor: '#436BFF' }}>
-                      Create <PlusOutlined />
+                      {translate('dashboard.createBtn')} <PlusOutlined />
                     </Button>
                   )}
                 </Col>
@@ -77,9 +84,9 @@ const DashboardAnalytic: FC = () => {
                         </Col>
                         <Col span={18}>
                           <Typography.Title level={4} className="mb-0">
-                            {projectStatus?.newProject} Project
+                            {projectStatus?.newProject} {translate('dashboard.projectTitle')}
                           </Typography.Title>
-                          <Typography.Text type="secondary">Upcoming</Typography.Text>
+                          <Typography.Text type="secondary">{translate('dashboard.upcoming')}</Typography.Text>
                         </Col>
                       </Row>
                     </Skeleton>
@@ -94,9 +101,9 @@ const DashboardAnalytic: FC = () => {
                         </Col>
                         <Col span={18}>
                           <Typography.Title level={4} className="mb-0">
-                            {projectStatus?.inProgress} Project
+                            {projectStatus?.inProgress} {translate('dashboard.projectTitle')}
                           </Typography.Title>
-                          <Typography.Text type="secondary">On Progress</Typography.Text>
+                          <Typography.Text type="secondary">{translate('dashboard.onProgress')}</Typography.Text>
                         </Col>
                       </Row>
                     </Skeleton>
@@ -111,9 +118,9 @@ const DashboardAnalytic: FC = () => {
                         </Col>
                         <Col span={18}>
                           <Typography.Title level={4} className="mb-0">
-                            {projectStatus?.completed} Project
+                            {projectStatus?.completed} {translate('dashboard.projectTitle')}
                           </Typography.Title>
-                          <Typography.Text type="secondary">Completed</Typography.Text>
+                          <Typography.Text type="secondary">{translate('dashboard.completed')}</Typography.Text>
                         </Col>
                       </Row>
                     </Skeleton>
@@ -127,7 +134,7 @@ const DashboardAnalytic: FC = () => {
                 <Col span={12}>
                   <Card>
                     <Skeleton loading={isLoading} avatar active paragraph={{ rows: 9 }}>
-                      <Typography.Title level={4}>My Tasks</Typography.Title>
+                      <Typography.Title level={4}>{translate('dashboard.myTaskTitle')}</Typography.Title>
                       <Row gutter={[24, 24]}>
                         {listTask &&
                           listTask.map(({ name, description, timeRemaining, isCompleted }) => (
@@ -163,7 +170,7 @@ const DashboardAnalytic: FC = () => {
                 <Col span={12}>
                   <Card>
                     <Skeleton loading={isLoading} avatar active paragraph={{ rows: 9 }}>
-                      <Typography.Title level={4}>My Projects</Typography.Title>
+                      <Typography.Title level={4}>{translate('dashboard.myProjectTitle')}</Typography.Title>
                       <Row gutter={[24, 24]}>
                         {listProject &&
                           listProject.map(({ projectName, companyName, status, timeStart }) => (
@@ -213,7 +220,7 @@ const DashboardAnalytic: FC = () => {
                 <Col span={12}>
                   <Card style={{ minHeight: 389 }}>
                     <Skeleton loading={isLoading} avatar active paragraph={{ rows: 9 }}>
-                      <Typography.Title level={4}>My Calendar</Typography.Title>
+                      <Typography.Title level={4}>{translate('dashboard.myCalendarTitle')}</Typography.Title>
 
                       <Typography.Title level={5} className="mt-3">
                         {new Date().toDateString()}
@@ -268,7 +275,7 @@ const DashboardAnalytic: FC = () => {
                 <Col span={12}>
                   <Card>
                     <Skeleton loading={isLoading} avatar active paragraph={{ rows: 9 }}>
-                      <Typography.Title level={4}>Opportunities</Typography.Title>
+                      <Typography.Title level={4}>{translate('dashboard.opportunityTitle')}</Typography.Title>
                       <Row gutter={[24, 24]}>
                         {projectOpportunity &&
                           projectOpportunity.map(({ projectName, description, projectTime, rate }) => (
@@ -294,7 +301,7 @@ const DashboardAnalytic: FC = () => {
 
                 <Col span={24}>
                   <Card>
-                    <Typography.Title level={4}>Rate</Typography.Title>
+                    <Typography.Title level={4}>{translate('dashboard.rateTitle')}</Typography.Title>
 
                     <Stock
                       xField="trade_date"
@@ -316,7 +323,7 @@ const DashboardAnalytic: FC = () => {
               <Col span={24}>
                 <Skeleton loading={isLoading} active avatar paragraph={false}>
                   <Typography.Paragraph className="mb-5">
-                    Team members{' '}
+                    {translate('dashboard.teamMemberTitle')}
                     <span style={{ color: ThemeColorStyle.DAYBREAK_BLUE }}>({memberInformation?.total ?? 0})</span>
                   </Typography.Paragraph>
                   <Space size={19} wrap>
@@ -331,7 +338,9 @@ const DashboardAnalytic: FC = () => {
 
               <Col span={24}>
                 <Skeleton paragraph={false} active loading={isLoading}>
-                  <Typography.Paragraph className="mt-5">Recent activities</Typography.Paragraph>
+                  <Typography.Paragraph className="mt-5">
+                    {translate('dashboard.recentActivityTitle')}
+                  </Typography.Paragraph>
                 </Skeleton>
                 <Row gutter={[16, 16]} className="mt-5">
                   <Col span={3}>
@@ -347,7 +356,7 @@ const DashboardAnalytic: FC = () => {
                   <Col span={21} className="mt-0">
                     <Skeleton loading={isLoading} paragraph={{ rows: 3 }} active>
                       <Typography.Text type="secondary">
-                        <Typography.Text>Tommy</Typography.Text> pushed to
+                        <Typography.Text>Tommy</Typography.Text> {translate('dashboard.pushTitle')}
                         <span className="underline ml-2">feature/get_table_relationship</span>
                         <Typography.Text> jenkins/isdc-backup-backend</Typography.Text>
                       </Typography.Text>
@@ -365,7 +374,7 @@ const DashboardAnalytic: FC = () => {
                           src="https://static-cse.canva.com/blob/649196/createbanners.jpg"
                         />
                         <Typography.Text type="secondary">
-                          <FieldTimeOutlined /> Today at 14:20 pm
+                          <FieldTimeOutlined /> {translate('dashboard.currentTimeActivity')}
                         </Typography.Text>
                       </>
                     )}
@@ -374,7 +383,7 @@ const DashboardAnalytic: FC = () => {
               </Col>
 
               <Col span={24} className="mt-5">
-                <Typography.Paragraph>Bugs</Typography.Paragraph>
+                <Typography.Paragraph>{translate('dashboard.bugsTitle')}</Typography.Paragraph>
 
                 <Column
                   xField="month"
@@ -390,7 +399,7 @@ const DashboardAnalytic: FC = () => {
               </Col>
 
               <Col span={24} className="mt-5">
-                <Typography.Paragraph className="mt-5">Team report</Typography.Paragraph>
+                <Typography.Paragraph className="mt-5">{translate('dashboard.teamReportTitle')}</Typography.Paragraph>
 
                 <Pie
                   angleField="value"

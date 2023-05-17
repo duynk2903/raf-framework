@@ -1,0 +1,21 @@
+{
+  "dashboard": {
+    "createBtn": "만들다",
+    "searchPlaceholder": "찾다",
+    "projectTitle": "프로젝트",
+    "upcoming": "다가오는",
+    "onProgress": "진행 중",
+    "completed": "완전한",
+    "myTaskTitle": "내 작업",
+    "myProjectTitle": "내 프로젝트",
+    "myCalendarTitle": "내 캘린더",
+    "opportunityTitle": "기회",
+    "rateTitle": "비율",
+    "teamMemberTitle": "팀 멤버",
+    "recentActivityTitle": "최근 활동",
+    "pushTitle": "에 밀어",
+    "currentTimeActivity": "오늘 오후 14:20",
+    "bugsTitle": "버그",
+    "teamReportTitle": "팀 보고서"
+  }
+}

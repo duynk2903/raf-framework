@@ -4,9 +4,10 @@ export interface LocalesModel {
 }
 
 export interface LocalesResourceModel {
-  auth: any
-  common: any
-  error: any
-  menu: any
-  settings: any
+  auth: Record<any, any>
+  common: Record<any, any>
+  error: Record<any, any>
+  menu: Record<any, any>
+  settings: Record<any, any>
+  dashboard?: Record<any, any>
 }

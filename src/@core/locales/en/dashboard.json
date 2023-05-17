@@ -1,0 +1,21 @@
+{
+  "dashboard": {
+    "createBtn": "Create",
+    "searchPlaceholder": "Search",
+    "projectTitle": "Project",
+    "upcoming": "Upcoming",
+    "onProgress": "On Progress",
+    "completed": "Completed",
+    "myTaskTitle": "My Task",
+    "myProjectTitle": "My Project",
+    "myCalendarTitle": "My Calendar",
+    "opportunityTitle": "Opportunities",
+    "rateTitle": "Rate",
+    "teamMemberTitle": "Team Members",
+    "recentActivityTitle": "Recent Activities",
+    "pushTitle": "pushed to",
+    "currentTimeActivity": "Today at 14:20 pm",
+    "bugsTitle": "Bugs",
+    "teamReportTitle": "Team Report"
+  }
+}

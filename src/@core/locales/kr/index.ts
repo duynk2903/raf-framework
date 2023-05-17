@@ -3,6 +3,7 @@ import common from './common.json'
 import error from './error.json'
 import menu from './menu.json'
 import settings from './settings.json'
+import dashboard from './dashboard.json'
 import { LocalesResourceModel } from '@core/models/locales.model'
 
 const ko_KR: LocalesResourceModel = {
@@ -10,6 +11,7 @@ const ko_KR: LocalesResourceModel = {
   common,
   error,
   menu,
-  settings
+  settings,
+  dashboard
 }
 export { ko_KR }

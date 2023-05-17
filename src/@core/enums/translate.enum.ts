@@ -3,7 +3,8 @@ export enum TranslateEnum {
   MENU = 'menu',
   SETTINGS = 'settings',
   ERROR = 'error',
-  AUTH = 'auth'
+  AUTH = 'auth',
+  DASHBOARD = 'dashboard'
 }
 
 export enum TranslateLanguageEnum {

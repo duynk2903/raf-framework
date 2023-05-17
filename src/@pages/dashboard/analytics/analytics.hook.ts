@@ -14,6 +14,8 @@ import {
   useGetDashboardTeamReport,
   useGetMemberInformation
 } from '@pages/dashboard/dashboard.query'
+import { useTranslation } from 'react-i18next'
+import { TranslateEnum } from '@core/enums/translate.enum'
 
 /**
  * Dashboard hooks
@@ -21,6 +23,7 @@ import {
 const useDashboardAnalytics = () => {
   // Component state
   const themeSettings = useRecoilValue(themeSettingsState)
+  const { t: translate } = useTranslation([TranslateEnum.DASHBOARD])
   const [analyticState, setAnalyticState] = useState<DashboardAnalyticsState>(
     Builder<DashboardAnalyticsState>()
       .listTask([])
@@ -116,7 +119,8 @@ const useDashboardAnalytics = () => {
       isLoadingGetMembers ||
       isLoadingGetListBugs ||
       isLoadingGetTeamReport,
-    ...analyticState
+    ...analyticState,
+    translate
   }
 }
 

@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: update the hook of menu sidebar">
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: Remove unused import in analytics.component.tsx">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/enums/translate.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/enums/translate.enum.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/locales/en/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/en/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/locales/kr/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/kr/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/models/locales.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/models/locales.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.hook.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +103,7 @@
       <workItem from="1683088341202" duration="682000" />
       <workItem from="1683092077671" duration="56000" />
       <workItem from="1683093178748" duration="4914000" />
-      <workItem from="1684283577954" duration="12480000" />
+      <workItem from="1684283577954" duration="14955000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
@@ -295,14 +301,20 @@
       <option name="project" value="LOCAL" />
       <updated>1684300265546</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Tommy: Remove unused import in analytics.component.tsx">
+      <created>1684300305315</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1684300305315</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tommy: fix responsive main layout" />
     <MESSAGE value="Tommy: fix header style.scss" />
     <MESSAGE value="Tommy: fix i18n and change folder locales" />
     <MESSAGE value="Tommy: add lazy load router" />
@@ -327,7 +339,8 @@
     <MESSAGE value="Tommy: update dashboard analytics.component.tsx UI" />
     <MESSAGE value="Tommy: update dashboard ui" />
     <MESSAGE value="Tommy: update the hook of menu sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: update the hook of menu sidebar" />
+    <MESSAGE value="Tommy: Remove unused import in analytics.component.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: Remove unused import in analytics.component.tsx" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
