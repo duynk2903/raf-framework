@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: add skeleton for table.component.tsx">
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: update dashboard analytics.component.tsx UI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/data/dashboard/finance.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/data/dashboard/radar.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/data/dashboard/user.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/data/dashboard/bugs.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/data/dashboard/rate.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/data/dashboard/report.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@core/data/mock.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/data/mock.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytic.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytic.type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.hook.ts" afterDir="false" />
     </list>
@@ -103,7 +104,7 @@
       <workItem from="1683088341202" duration="682000" />
       <workItem from="1683092077671" duration="56000" />
       <workItem from="1683093178748" duration="4914000" />
-      <workItem from="1684283577954" duration="4677000" />
+      <workItem from="1684283577954" duration="11918000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
@@ -280,14 +281,20 @@
       <option name="project" value="LOCAL" />
       <updated>1684218907839</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Tommy: update dashboard analytics.component.tsx UI">
+      <created>1684288281181</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1684288281181</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tommy: fix default open sidebar when navigate change" />
     <MESSAGE value="Tommy: Fix auth layout" />
     <MESSAGE value="Tommy: fix style primary layout" />
     <MESSAGE value="Tommy: fix responsive main layout" />
@@ -312,7 +319,8 @@
     <MESSAGE value="Tommy: remove open ai key by security" />
     <MESSAGE value="Tommy: Fix only open devtools.component.tsx when development" />
     <MESSAGE value="Tommy: add skeleton for table.component.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: add skeleton for table.component.tsx" />
+    <MESSAGE value="Tommy: update dashboard analytics.component.tsx UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: update dashboard analytics.component.tsx UI" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

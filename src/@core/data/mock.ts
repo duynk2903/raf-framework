@@ -1,13 +1,7 @@
-import { listBugs } from '@core/data/dashboard/bugs'
-import { rateData } from '@core/data/dashboard/rate'
-import { teamReportData } from '@core/data/dashboard/report'
+import { mockDashBoardData } from '@core/data/dashboard'
 
 const mockModule: any = {
-  dashboard: {
-    listBugs: listBugs,
-    rateData: rateData,
-    teamReportData: teamReportData
-  }
+  dashboard: mockDashBoardData
 }
 
 export default mockModule
