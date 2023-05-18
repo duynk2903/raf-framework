@@ -67,12 +67,12 @@ const NgxChatBox: FC<ChatBoxProps> = ({ isOpen = false, handleClose }) => {
                     Today at {new Date().getHours()}:{new Date().getMinutes()}
                   </div>
                   <div className="message ai">May i help you! 👋</div>
-                  {chatBoxData.map((el, index) => (
+                  {chatBoxData.map((el) => (
                     <TextGenerator
                       message={el.content}
                       delay={20}
                       isAIGenerator={el.userType !== ChatBoxUserType.USER}
-                      key={index}
+                      key={el?.content}
                     />
                   ))}
                   {isWaitingAnswer && (

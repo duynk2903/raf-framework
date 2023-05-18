@@ -22,7 +22,10 @@ export class OpenAiService {
 
   public static getInstance(): OpenAIApi {
     if (!OpenAiService.instance) {
-      new OpenAiService()
+      const newInstance = new OpenAiService()
+      if (newInstance) {
+        return OpenAiService.instance
+      }
     }
     return OpenAiService.instance
   }

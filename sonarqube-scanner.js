@@ -4,7 +4,7 @@ const scanner = require('sonarqube-scanner')
 scanner(
   {
     serverUrl: 'http://localhost:9000',
-    token: 'sqa_407dcda01bdf8e8839ce503559787908e5691937',
+    token: 'sqa_156098240e72d5b1a8a067fc5a8c5e88b5823dee',
     options: {
       'sonar.projectName': 'react-ant-framework',
       'sonar.projectDescription': 'React ant design framework',

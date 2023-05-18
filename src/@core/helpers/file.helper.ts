@@ -72,7 +72,7 @@ const downloadFileFromWorkBook = (workbook: any, promise: any, fileName: string)
  * @param sliceSize
  */
 const convertBase64ImagesToBlob = (b64Data: any, contentType = '', sliceSize = 512) => {
-  const byteCharacters = atob(b64Data)
+  const byteCharacters = Buffer.from(b64Data, 'base64').toString()
   const byteArrays = []
 
   for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
@@ -96,7 +96,7 @@ const convertBase64ImagesToBlob = (b64Data: any, contentType = '', sliceSize = 5
  * @param extension
  */
 function convertUint8ArrayToBase64Images(arr: Uint8Array, extension: string) {
-  const base64Images = btoa(arr.reduce((data, byte) => data + String.fromCharCode(byte), ''))
+  const base64Images = Buffer.from(arr.reduce((data, byte) => data + String.fromCharCode(byte), '')).toString('base64')
   return `data:image/${extension};base64,${base64Images}`
 }
 

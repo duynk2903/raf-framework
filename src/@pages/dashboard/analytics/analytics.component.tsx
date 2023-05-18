@@ -16,7 +16,6 @@ import {
 } from '@ant-design/icons'
 import { ThemeColorStyle } from '@core/enums/theme.enum'
 import { Column, Pie, Stock } from '@ant-design/plots'
-import { ProjectStatus } from '@pages/dashboard/analytics/analytic.type'
 import { String } from '@core/enums/common.enum'
 
 /**
@@ -36,7 +35,8 @@ const DashboardAnalytic: FC = () => {
     memberInformation,
     listBugs,
     teamReportData,
-    translate
+    translate,
+    getProjectStatusColor
   } = useDashboardAnalytics()
   return (
     <NgxAnimation type="fade-left" delay={300}>
@@ -179,23 +179,12 @@ const DashboardAnalytic: FC = () => {
                                 <FolderOpenOutlined
                                   className="mr-1"
                                   style={{
-                                    color:
-                                      status === ProjectStatus.ON_HOLD
-                                        ? '#E43E0A'
-                                        : status === ProjectStatus.PENDING
-                                        ? '#FEBB55'
-                                        : '#6CB350'
+                                    color: getProjectStatusColor(status)
                                   }}
                                 />
                                 {projectName}
                                 <Tag
-                                  color={
-                                    status === ProjectStatus.ON_HOLD
-                                      ? '#E43E0A'
-                                      : status === ProjectStatus.PENDING
-                                      ? '#FEBB55'
-                                      : '#6CB350'
-                                  }
+                                  color={getProjectStatusColor(status)}
                                   className="text-center w-20 rounded-xl absolute right-0 top-1">
                                   {status}
                                 </Tag>

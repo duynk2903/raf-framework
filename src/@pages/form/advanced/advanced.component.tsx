@@ -1,7 +1,6 @@
-import { FC } from 'react'
 import NgxAnimation from '@core/components/ngx-animation/animation.component'
-import { Card, Col, Row, Typography } from 'antd'
-import React, { useMemo } from 'react'
+import { Card, Col, Row, Typography, Slider, Rate } from 'antd'
+import React, { useMemo, FC } from 'react'
 import { createForm } from '@formily/core'
 import { createSchemaField } from '@formily/react'
 import {
@@ -32,7 +31,6 @@ import {
   ArrayTable,
   ArrayCards
 } from '@formily/antd-v5'
-import { Slider, Rate } from 'antd'
 import NgxIcon from '@core/components/ngx-icon/icon.component'
 import './advanced.style.scss'
 

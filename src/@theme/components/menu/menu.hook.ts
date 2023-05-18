@@ -42,7 +42,8 @@ const useMenu = () => {
    */
   const handleSelectedMenuAndStartNavigate = useCallback(
     ({ keyPath: segments }: { keyPath: string[] }) => {
-      const routerPath = `${String.BASE_PATH}${segments.reverse().join(String.BASE_PATH)}`
+      const reverseSegment = segments.slice().reverse()
+      const routerPath = `${String.BASE_PATH}${reverseSegment.join(String.BASE_PATH)}`
       const listRouterFlat = flatRouter(routerConfigs())
       const matchRouter = listRouterFlat.find((el: RouterModel) => el.path === routerPath)
       if (matchRouter) {

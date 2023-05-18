@@ -4,6 +4,7 @@ import { themeSettingsState } from '@core/components/ngx-theme-setting/setting.r
 import {
   DashboardAnalyticsState,
   DashboardDataModel,
+  ProjectStatus,
   ProjectStatusModel
 } from '@pages/dashboard/analytics/analytic.type'
 import { Builder } from '@core/helpers/builder.helper'
@@ -98,6 +99,25 @@ const useDashboardAnalytics = () => {
   })
 
   /**
+   * Get project tag color by project status
+   * @param status
+   */
+  function getProjectStatusColor(status: ProjectStatus) {
+    let color: string
+    switch (status) {
+      case ProjectStatus.ON_HOLD:
+        color = '#E43E0A'
+        break
+      case ProjectStatus.PENDING:
+        color = '#FEBB55'
+        break
+      default:
+        color = '#6CB350'
+    }
+    return color
+  }
+
+  /**
    * Initial effects
    */
   useEffect(() => {
@@ -120,7 +140,8 @@ const useDashboardAnalytics = () => {
       isLoadingGetListBugs ||
       isLoadingGetTeamReport,
     ...analyticState,
-    translate
+    translate,
+    getProjectStatusColor
   }
 }
 

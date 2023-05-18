@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: optimize layout effect for menu hook, app animation effect">
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: update space between div of analytics.component.tsx">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonarqube-scanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/sonarqube-scanner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-devtools/chat-box/chatbox.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-devtools/chat-box/chatbox.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-navigator/navigator.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-navigator/navigator.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/configs/axios.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/axios.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/data/dashboard/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/data/dashboard/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/enums/regex.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/enums/regex.enum.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/helpers/auth.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/helpers/auth.helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/helpers/file.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/helpers/file.helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/services/open-ai.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/services/open-ai.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.hook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@pages/form/advanced/advanced.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/form/advanced/advanced.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/components/menu/menu.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/menu/menu.hook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.component.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +112,8 @@
       <workItem from="1683088341202" duration="682000" />
       <workItem from="1683092077671" duration="56000" />
       <workItem from="1683093178748" duration="4914000" />
-      <workItem from="1684283577954" duration="16978000" />
+      <workItem from="1684283577954" duration="17681000" />
+      <workItem from="1684369719196" duration="3199000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
@@ -317,14 +332,20 @@
       <option name="project" value="LOCAL" />
       <updated>1684306338901</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Tommy: update space between div of analytics.component.tsx">
+      <created>1684307048547</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1684307048547</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tommy: add lazy load router" />
     <MESSAGE value="Tommy: fix router replace" />
     <MESSAGE value="Tommy: add analytic dashboard" />
     <MESSAGE value="Tommy: remove to do in mock data" />
@@ -349,7 +370,8 @@
     <MESSAGE value="Tommy: Remove unused import in analytics.component.tsx" />
     <MESSAGE value="Tommy: add multiple language dashboard analytic screen" />
     <MESSAGE value="Tommy: optimize layout effect for menu hook, app animation effect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: optimize layout effect for menu hook, app animation effect" />
+    <MESSAGE value="Tommy: update space between div of analytics.component.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: update space between div of analytics.component.tsx" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

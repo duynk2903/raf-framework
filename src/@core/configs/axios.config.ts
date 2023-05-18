@@ -1,7 +1,7 @@
 import { applicationEnvironmentVariable } from '@core/configs/env.config'
-import axios, { AxiosInstance, AxiosRequestConfig } from 'axios'
-import { CreateAxiosDefaults } from 'axios'
+import axios, { AxiosInstance, AxiosRequestConfig, CreateAxiosDefaults } from 'axios'
 import { String } from '@core/enums/common.enum'
+
 const envConfig = applicationEnvironmentVariable()
 
 // Base axios api config
@@ -33,7 +33,10 @@ export class AxiosSingleton {
    */
   public static getInstance(): AxiosInstance {
     if (!AxiosSingleton.instance) {
-      new AxiosSingleton()
+      const instance = new AxiosSingleton()
+      if (instance) {
+        return AxiosSingleton.instance
+      }
     }
     return AxiosSingleton.instance
   }

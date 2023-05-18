@@ -15,9 +15,7 @@ const getAuthorizationCertificate = () => {
   let baseAuthorizationInitial = Builder<AuthorizationModel>().accessToken(String.EMPTY_STRING).build()
   const refreshToken = getCookieByName(CookieEnum.REFRESH_TOKEN)
   if (refreshToken && refreshToken.length > 0) {
-    if (refreshToken && refreshToken.length > 0) {
-      baseAuthorizationInitial = decodeJwtTokenAndConvertToAuthorizationModel(refreshToken)
-    }
+    baseAuthorizationInitial = decodeJwtTokenAndConvertToAuthorizationModel(refreshToken)
   }
   return baseAuthorizationInitial
 }

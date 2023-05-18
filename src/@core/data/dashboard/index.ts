@@ -446,19 +446,19 @@ const myTaskData: DashboardTaskModel[] = [
     name: 'Create base source code frontend',
     description: 'Sending reports',
     isCompleted: false,
-    timeRemaining: `00 : ${Math.floor(Math.random() * 30)}`
+    timeRemaining: `00 : 15`
   },
   {
     name: 'Implement new dashboard screen',
     description: 'Sending reports',
     isCompleted: true,
-    timeRemaining: `00 : ${Math.floor(Math.random() * 30)}`
+    timeRemaining: `00 : 30`
   },
   {
     name: 'Review code of dashboard screen',
     description: 'Sending reports',
     isCompleted: true,
-    timeRemaining: `00 : ${Math.floor(Math.random() * 30)}`
+    timeRemaining: `00 : 45`
   }
 ]
 

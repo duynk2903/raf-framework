@@ -16,11 +16,8 @@ import NgxLoader from '@core/components/ngx-loader/loader.component'
  */
 const PrimaryLayout: FC = () => {
   const { colorBgContainer, isLoading, isEnabled, collapsed } = usePrimaryLayout()
-  const layoutPaddingLeft = !isEnabled
-    ? 0
-    : !collapsed
-    ? themeVariables.sidebarWidth
-    : themeVariables.sidebarWidthCollapsed
+  const sideBarWidth = !collapsed ? themeVariables.sidebarWidth : themeVariables.sidebarWidthCollapsed
+  const layoutPaddingLeft = !isEnabled ? 0 : sideBarWidth
   return (
     <Layout className="ngx-primary-layout">
       <NgxLoader isLoading={isLoading}>
