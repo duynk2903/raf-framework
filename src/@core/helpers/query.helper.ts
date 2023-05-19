@@ -8,7 +8,7 @@ import { QueryFunction, useQuery } from '@tanstack/react-query'
  */
 function useAppQuery(queryKey: any, queryFunction: QueryFunction<any, any>, options: any = {}) {
   const { onError } = options
-  return useQuery(queryKey, queryFunction, { ...options, useErrorBoundary: !!onError })
+  return useQuery({ queryKey, queryFn: queryFunction, ...options, useErrorBoundary: !!onError })
 }
 
 export { useAppQuery }

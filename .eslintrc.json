@@ -8,7 +8,8 @@
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
+        "plugin:@tanstack/eslint-plugin-query/recommended"
     ],
     "overrides": [
     ],
@@ -19,7 +20,8 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "@tanstack/query"
     ],
     "rules": {
         "react/react-in-jsx-scope": "off",
@@ -28,6 +30,8 @@
         "react/display-name": "off",
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/ban-ts-comment": "off",
-        "@typescript-eslint/no-unused-vars": "off"
+        "@typescript-eslint/no-unused-vars": "off",
+        "@tanstack/query/exhaustive-deps": "error",
+        "@tanstack/query/prefer-query-object-syntax": "error"
     }
 }

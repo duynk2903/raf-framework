@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: update space between div of analytics.component.tsx">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: fix sonarqube issue">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sonarqube-scanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/sonarqube-scanner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-devtools/chat-box/chatbox.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-devtools/chat-box/chatbox.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-navigator/navigator.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-navigator/navigator.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/configs/axios.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/configs/axios.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/data/dashboard/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/data/dashboard/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/enums/regex.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/enums/regex.enum.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/helpers/auth.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/helpers/auth.helper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/helpers/file.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/helpers/file.helper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/services/open-ai.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/services/open-ai.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/dashboard/analytics/analytics.hook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@pages/form/advanced/advanced.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@pages/form/advanced/advanced.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/components/menu/menu.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/components/menu/menu.hook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@theme/layouts/primary/primary.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/helpers/query.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/helpers/query.helper.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +103,7 @@
       <workItem from="1683093178748" duration="4914000" />
       <workItem from="1684283577954" duration="17681000" />
       <workItem from="1684369719196" duration="3199000" />
+      <workItem from="1684455650759" duration="1735000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
