@@ -7,16 +7,19 @@ import { useLoader } from '@core/components/ngx-preloader/preloader.hook'
  * @constructor
  */
 const NgxPreloader: FC = () => {
-  const { isDisplay } = useLoader()
+  const { isDisplay, colorBgContainer } = useLoader()
   return (
     <>
       {isDisplay && (
-        <section className="loader-wrapper">
-          <svg>
-            <circle cx="50" cy="50" r="40" stroke="red" strokeDasharray="78.5 235.5" strokeWidth="3" fill="none" />
-            <circle cx="50" cy="50" r="30" stroke="blue" strokeDasharray="62.8 188.8" strokeWidth="3" fill="none" />
-            <circle cx="50" cy="50" r="20" stroke="green" strokeDasharray="47.1 141.3" strokeWidth="3" fill="none" />
-          </svg>
+        <section className="loader-wrapper" style={{ backgroundColor: colorBgContainer }}>
+          <div className="anim-cont">
+            <div className="side-1"></div>
+            <div className="side-2"></div>
+            <div className="side-3"></div>
+            <div className="side-4"></div>
+            <div className="side-5"></div>
+            <div className="side-6"></div>
+          </div>
         </section>
       )}
     </>

@@ -337,7 +337,11 @@ const DashboardAnalytic: FC = () => {
                       <Avatar
                         size="large"
                         src={
-                          <img src="https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png" alt="avatar" />
+                          <img
+                            src="https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png"
+                            loading="lazy"
+                            alt="avatar"
+                          />
                         }
                       />
                     </Skeleton>
