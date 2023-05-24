@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: Change loader style">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-preloader/preloader.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-preloader/preloader.style.scss" afterDir="false" />
+    <list default="true" id="6b4722a5-2f67-4aa7-a9af-72774cdc0494" name="Changes" comment="Tommy: fix lint scss loader style">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-devtools/devtools.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-devtools/devtools.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/components/ngx-devtools/devtools.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/components/ngx-devtools/devtools.hook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/enums/translate.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/enums/translate.enum.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/locales/en/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/en/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/locales/kr/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/locales/kr/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/@core/models/locales.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/@core/models/locales.model.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +38,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/220720-0002/Desktop/study/raf-framework",
+    "last_opened_file_path": "/Users/duynk9/Desktop/CMC/react-ant-framework/src/@core/locales/kr",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -51,6 +54,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/@core/locales/kr" />
       <recent name="C:\Users\220720-0002\Desktop\study\react-ant-framework\src\@core\helpers" />
       <recent name="C:\Users\220720-0002\Desktop\study\react-ant-framework\src\@core\models" />
     </key>
@@ -103,7 +107,7 @@
       <workItem from="1684283577954" duration="17681000" />
       <workItem from="1684369719196" duration="3199000" />
       <workItem from="1684455650759" duration="1735000" />
-      <workItem from="1684897789385" duration="6211000" />
+      <workItem from="1684897789385" duration="13163000" />
     </task>
     <task id="LOCAL-00001" summary="Tommy: fix default open sidebar when navigate change">
       <created>1682345332751</created>
@@ -336,14 +340,20 @@
       <option name="project" value="LOCAL" />
       <updated>1684910779380</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Tommy: fix lint scss loader style">
+      <created>1684910890144</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1684910890144</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tommy: add analytic dashboard" />
     <MESSAGE value="Tommy: remove to do in mock data" />
     <MESSAGE value="Tommy: change ant chart to chart plots" />
     <MESSAGE value="Tommy: add common ngx-animation" />
@@ -368,7 +378,8 @@
     <MESSAGE value="Tommy: optimize layout effect for menu hook, app animation effect" />
     <MESSAGE value="Tommy: update space between div of analytics.component.tsx" />
     <MESSAGE value="Tommy: Change loader style" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tommy: Change loader style" />
+    <MESSAGE value="Tommy: fix lint scss loader style" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tommy: fix lint scss loader style" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

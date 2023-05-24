@@ -1,0 +1,17 @@
+{
+  "devTools": {
+    "chatBotTooltip": "Chat bot",
+    "skeletonBuilderTooltip": "Skeleton builder",
+    "formBuilderTooltip": "Form builder",
+    "tour": {
+      "devtoolsTitle": "Devtools",
+      "devtoolsDescription": "The development tools using for create a form, skeleton by drag and drop and integrate Chat GPT for support generation code comment, ..etc",
+      "chatBotTitle": "Chat bot",
+      "chatBotDescription": "The Chat GPT integration using for generate code comment, translate, resolve technique issues",
+      "skeletonBuilderTitle": "Skeleton builder",
+      "skeletonBuilderDescription": "The Skeleton builder integration using for create layout Skeleton by drag drop and export to code React.",
+      "formBuilderTitle": "Form builder",
+      "formBuilderDescription": "The FormBuilder integration using for generate form by drag drop and export to code React."
+    }
+  }
+}

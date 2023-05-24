@@ -4,7 +4,8 @@ export enum TranslateEnum {
   SETTINGS = 'settings',
   ERROR = 'error',
   AUTH = 'auth',
-  DASHBOARD = 'dashboard'
+  DASHBOARD = 'dashboard',
+  DEVTOOLS = 'devTools'
 }
 
 export enum TranslateLanguageEnum {

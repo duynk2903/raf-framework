@@ -10,4 +10,5 @@ export interface LocalesResourceModel {
   menu: Record<any, any>
   settings: Record<any, any>
   dashboard?: Record<any, any>
+  devTools?: Record<any, any>
 }

@@ -1,0 +1,17 @@
+{
+  "devTools": {
+    "chatBotTooltip": "챗봇",
+    "skeletonBuilderTooltip": "스켈레톤 빌더",
+    "formBuilderTooltip": "양식 작성기",
+    "tour": {
+      "devtoolsTitle": "개발자 도구",
+      "devtoolsDescription": "드래그 앤 드롭으로 양식, 스켈레톤을 만들고 Chat GPT를 통합하여 생성 코드 주석, ..etc를 지원하는 데 사용하는 개발 도구",
+      "chatBotTitle": "챗봇",
+      "chatBotDescription": "코드 주석 생성, 번역, 기술 문제 해결을 위해 사용하는 Chat GPT 통합",
+      "skeletonBuilderTitle": "스켈레톤 빌더",
+      "skeletonBuilderDescription": "드래그 드롭 및 코드 React로 내보내기를 통해 스켈레톤 레이아웃 생성에 사용하는 스켈레톤 빌더 통합.",
+      "formBuilderTitle": "양식 작성기",
+      "formBuilderDescription": "드래그 드롭으로 양식을 생성하고 코드 React로 내보내는 데 사용하는 FormBuilder 통합."
+    }
+  }
+}

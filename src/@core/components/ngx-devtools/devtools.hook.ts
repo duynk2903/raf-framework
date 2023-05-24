@@ -1,6 +1,8 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useRef, useState } from 'react'
 import { DevToolsState } from '@core/components/ngx-devtools/devtools.type'
 import { produce } from 'immer'
+import { useTranslation } from 'react-i18next'
+import { TranslateEnum } from '@core/enums/translate.enum'
 
 /**
  * Use dev tool hook
@@ -14,6 +16,11 @@ const useDevTools = () => {
       isOpenSkeletonBuilder: false
     }
   })
+  const { t: translate } = useTranslation([TranslateEnum.DEVTOOLS])
+  const devToolsRef = useRef(null)
+  const formBuilderRef = useRef(null)
+  const openAIRef = useRef(null)
+  const skeletonBuilderRef = useRef(null)
   const handleOpenDevTools = useCallback((isOpen: boolean) => {
     setDevToolsState(
       produce(devToolsState, (draft) => {
@@ -54,6 +61,11 @@ const useDevTools = () => {
     handleOpenDevTools,
     handleOpenChatBox,
     handleOpenFormBuilder,
+    devToolsRef,
+    openAIRef,
+    formBuilderRef,
+    skeletonBuilderRef,
+    translate,
     ...devToolsState
   }
 }

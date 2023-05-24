@@ -6,6 +6,7 @@ import { useDevTools } from '@core/components/ngx-devtools/devtools.hook'
 import NgxChatBox from '@core/components/ngx-devtools/chat-box/chatbox.component'
 import NgxFormBuilder from '@core/components/ngx-devtools/form-builder/form.component'
 import { NgxDevToolsProps } from '@core/components/ngx-devtools/devtools.type'
+import NgxDevToolsTournament from '@core/components/ngx-devtools/tour/tour.component'
 
 /**
  * Ngx common devtools
@@ -13,7 +14,18 @@ import { NgxDevToolsProps } from '@core/components/ngx-devtools/devtools.type'
  * @constructor
  */
 const NgxDevtools: FC<NgxDevToolsProps> = ({ isOpenDevTools = true }) => {
-  const { isOpen, handleOpenDevTools, handleOpenChatBox, itemState, handleOpenFormBuilder } = useDevTools()
+  const {
+    isOpen,
+    handleOpenDevTools,
+    handleOpenChatBox,
+    itemState,
+    handleOpenFormBuilder,
+    devToolsRef,
+    formBuilderRef,
+    openAIRef,
+    skeletonBuilderRef,
+    translate
+  } = useDevTools()
   return (
     <>
       {isOpenDevTools && (
@@ -22,22 +34,29 @@ const NgxDevtools: FC<NgxDevToolsProps> = ({ isOpenDevTools = true }) => {
             shape="circle"
             className="ngx-devtools-container"
             trigger="hover"
-            icon={<CodeSandboxOutlined spin />}
+            icon={<CodeSandboxOutlined ref={devToolsRef} spin />}
             onOpenChange={handleOpenDevTools}
             open={isOpen}>
             {isOpen && (
               <>
                 <FloatButton
+                  ref={openAIRef}
                   badge={{ count: 1 }}
                   icon={<CommentOutlined />}
-                  tooltip="Chat bot"
+                  tooltip={translate('devTools.chatBotTooltip')}
                   className="chat-bot-btn"
                   onClick={() => handleOpenChatBox(true)}
                 />
-                <FloatButton icon={<PicRightOutlined />} tooltip="Skeleton builder" className="skeleton-builder-btn" />
                 <FloatButton
+                  ref={skeletonBuilderRef}
+                  icon={<PicRightOutlined />}
+                  tooltip={translate('devTools.skeletonBuilderTooltip')}
+                  className="skeleton-builder-btn"
+                />
+                <FloatButton
+                  ref={formBuilderRef}
                   icon={<FormOutlined />}
-                  tooltip="Form builder"
+                  tooltip={translate('devTools.formBuilderTooltip')}
                   className="skeleton-builder-btn"
                   onClick={() => handleOpenFormBuilder(true)}
                 />
@@ -48,6 +67,15 @@ const NgxDevtools: FC<NgxDevToolsProps> = ({ isOpenDevTools = true }) => {
             <NgxChatBox isOpen={itemState?.isOpenChatBox} handleClose={() => handleOpenChatBox(false)} />
           )}
           <NgxFormBuilder isOpen={itemState?.isOpenFormBuilder} onClose={() => handleOpenFormBuilder(false)} />
+          <NgxDevToolsTournament
+            translate={translate}
+            devToolsRef={devToolsRef}
+            openAIRef={openAIRef}
+            formBuilderRef={formBuilderRef}
+            skeletonBuilderRef={skeletonBuilderRef}
+            handleOpenDevTools={handleOpenDevTools}
+            isEnabled
+          />
         </>
       )}
     </>

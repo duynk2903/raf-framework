@@ -4,6 +4,7 @@ import error from './error.json'
 import menu from './menu.json'
 import settings from './settings.json'
 import dashboard from './dashboard.json'
+import devTools from './devtools.json'
 import { LocalesResourceModel } from '@core/models/locales.model'
 
 const en_US: LocalesResourceModel = {
@@ -12,6 +13,7 @@ const en_US: LocalesResourceModel = {
   error,
   menu,
   settings,
-  dashboard
+  dashboard,
+  devTools
 }
 export default en_US
